@@ -1,0 +1,944 @@
+@import "default.css";
+
+
+/* HEADER TOP */
+.header-top{
+    background: var(--dgc);
+}
+.header-top p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.header-top ul li {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	margin: 0px 14px;
+}
+.header-top ul{
+    border-right: 1.5px solid var(--wc);
+}
+.header-top ul:last-child{
+    border-right: none;
+}
+/* HEADER TOP */
+
+/*HEADER*/
+header {
+    height: 100px;
+    background: #ffffff;
+    transition: .4s;
+
+}
+
+.logo img {
+    max-width: 235px;
+}
+
+.logo i {
+    font-size: 22px;
+    padding: 8px;
+    padding-right: 0;
+    transition: .2s;
+}
+
+.logo i:hover {
+    color: var(--sc);
+    cursor: pointer;
+}
+
+.menubar ul {
+    text-align: right;
+}
+
+.menubar ul li {
+    display: inline-block;
+}
+
+.menubar ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    height: 35px;
+    padding: 7px 20px;
+    color: var(--lbc);
+    transition: 0.2s;
+}
+.menubar ul li a:hover{
+    color: var(--wsc);
+}
+.menubar .login-menu {
+    background: linear-gradient(102.92deg, #1B1285 -36.3%, #643088 100%);
+    color: var(--wc);
+    border-radius: 5px;
+}
+
+/*HEADER*/
+
+/*MOBILE MENU*/
+
+/*ACCORDION CUSTOM*/
+.custom a{
+    color: var(--abc);
+}
+.custom a:hover{
+    color: var(--sc);
+}
+.mobile-logo img {
+    width: 150px;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+.mobile-logo i {
+    font-size: 20px;
+    float: right;
+    margin: 5px 20px;
+    color: var(--lbc);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mobile-logo i:hover {
+    color: var(--wsc);
+}
+
+.custom.accordion-button {
+    text-transform: capitalize;
+    font-size: 15px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: var(--pc);
+    font-weight: 400;
+}
+
+.custom.accordion-button:hover {
+    color: var(--wsc);
+}
+
+.custom.accordion-button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #ccc;
+
+}
+
+.custom.accordion-button:not(.collapsed) {
+    color: var(--sc);
+    background: var(--rc);
+    -webkit-transform: none;
+    transform: none;
+    font-weight: 400;
+}
+
+.custom.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: "\f068";
+    font-family: 'FontAwesome';
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+
+.none.accordion-button:not(.collapsed)::after {
+    content: none;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+
+
+.custom.accordion-button::after {
+    background-image: none;
+    content: "\f067";
+    font-family: 'FontAwesome';
+}
+
+.none.accordion-button::after {
+    content: none;
+}
+
+.custom.accordion-body {
+    padding: 0 0px;
+}
+
+.custom.accordion-body ul {
+    padding: 0;
+    margin: 0;
+}
+
+.custom.accordion-body ul li {
+    list-style: none;
+    padding: 8px 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.custom.accordion-body ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--pc);
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.custom.accordion-body ul li a i {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.custom.accordion-body ul li:hover {
+    color: var(--wc);
+    background: var(--rc);
+}
+
+.custom.accordion-body ul li:hover a {
+    color: var(--sc);
+}
+
+.custom.accordion-item a {
+    text-decoration: none;
+
+}
+
+
+.accordion-button.custom i {
+    padding: 0 10px;
+}
+
+/*ACCORDION CUSTOM END*/
+.mobile-menu {
+    width: 350px;
+    position: fixed;
+    left: -380px;
+    top: 0;
+    z-index: 2;
+    background: var(--wc);
+    height: 100%;
+    overflow: auto;
+    transition: .4s;
+    padding: 10px 0;
+}
+
+#mobileOverlay {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: rgba(101, 41, 145, 0.71);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mobileAdd {
+    left: 0 !important;
+}
+
+.mobile-overlay {
+    position: inherit !important;
+}
+
+/*MOBILE MENU END*/
+
+/* BANNER PART CSS */
+.banner{
+    background-image: url(../img/photos/banner-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    background-color: #717fffc9;
+}
+.banner-content{
+    padding: 60px 0px;
+}
+.banner-content h1{
+    padding: 0px 20px;
+}
+/* search bar */
+.search-bar {
+    padding: 16px 30px;
+    background: var(--wc);
+    border-radius: 10px;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--lbc);
+    line-height: 18px;
+    border: none;
+    border-right: 1.5px solid var(--gc);
+    background-color: var(--wc);
+    background-image: none;
+    height: calc(3rem + 0px) !important;
+    border-radius:0;
+    outline: none;
+    padding-left: 10px;
+}
+.last-input{
+    border-right: none;
+}
+.search-slt::placeholder{
+    color: var(--gc);
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.search-bar button{
+    background: var(--wsc);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--wc);
+}
+/* BANNER PART CSS */
+
+/* QUALITY ITEM PART */
+.quality-item{
+    border: 1px dotted var(--dgc);
+    padding: 22px;
+}
+/* QUALITY ITEM PART */
+
+/* OUR SERVICE CSS */
+.our-service{
+    background: var(--lnc);
+}
+.p-card h5{
+    color: var(--wsc);
+}
+.more-service i{
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+    background: var(--wc);
+    color: var(--wsc);
+    border-radius: 50px;
+}
+.more-service span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--pgc);
+}
+/* OUR SERVICE CSS */
+
+/* VALET PARKING */
+.valet-parking h5{
+    text-transform: uppercase;
+    color: var(--wsc);
+    font-weight: 700;
+}
+.valet-parking .view-btn a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 18px 36px;
+}
+
+.valet-service h5{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dgc);
+}
+.valet-service .card-body{
+    min-height: 91px;
+}
+/* VALET PARKING */
+
+/* RENT OUT */
+.rent-out .view-btn a{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 20px 68px;
+}
+/* RENT OUT END */
+
+/* LATEST BLOG */
+.latest-blog h5{
+    color: var(--wsc);
+    font-weight: 500;
+}
+.latest-blog h3{
+    font-weight: 700;
+}
+hr.latest-blog{
+    background: #CCCCCC;
+    height: 2px;
+}
+.latest-blog span{
+    color: var(--gc);
+}
+.latest-blog .card-body h5{
+    color: var(--bc);
+}
+.latest-blog a{
+    font-weight: 500;
+    color: #000639;
+    transition: 0.2s;
+}
+.latest-blog a:hover{
+    color: var(--wsc);
+}
+/* LATEST BLOG */
+
+/* GET NOTIFICATIONS */
+.get-notificaiton .custom-control{
+    height: 65px;
+    width: 70%;
+    border: 2px solid var(--pgc);
+    outline: none;
+    border-radius: 4px;
+    background: var(--wc);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--dgc);
+    padding-left: 20px;
+}
+.get-notificaiton .custom-control::placeholder{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--gc);
+}
+.get-notificaiton button{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    border-radius: 4px;
+    width: 30%;
+    color: var(--wc);
+    background: var(--irc);
+}
+/* GET NOTIFICATIONS */
+
+/* FOOTER CSS */
+footer{
+    background: var(--fbg);
+}
+footer .custom-control{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background: var(--wc);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: var(--dgc);
+    height: 40px;
+    width: 70%;
+    padding-left: 10px;
+}
+footer .input-group button{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    background: var(--wsc);
+    border-radius: 5px;
+    width: 30%;
+    color: var(--wc);
+}
+
+.social-link ul li{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--wc);
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.social-link ul li i {
+    font-size: 18px;
+    color: var(--wc);
+    line-height: 29px;
+}
+.social-link ul li:hover{
+    background: var(--wsc);
+    border: 1px solid var(--wsc);
+}
+.footer-link h6{
+    color: var(--wc);
+    position: relative;
+}
+.footer-link h6::after {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: var(--wsc);
+    top: 30px;
+    left: 0px;
+    content: '';
+}
+.footer-link i{
+    font-size: 10px;
+    color: var(--wsc);
+}
+.copyright ul li {
+    margin-left: 22px;
+}
+/* FOOTER CSS */
+/* COPYRIGHT SECTION */
+.copyright{
+    background: #15202A;
+}
+.copyright span{
+    color: var(--wsc);
+    font-weight: 500;
+}
+.copyright ul li a{
+    color: var(--gc);
+    transition: 0.2s;
+}
+.copyright ul li a:hover{
+    color: var(--wsc);
+}
+.triangle-div {
+    background: var(--wc);
+    height: 58px;
+    width: 100%;
+    clip-path: polygon(0% 0%, 102% 0%, 82% 490%, 4% 102%);
+    margin-bottom: -30px;
+}
+/* COPYRIGHT SECTION */
+
+/* ========================================
+    SEARCH RESULT PAGE CSS 
+======================================== */
+.search-result{
+    background: var(--lnc);
+}
+.search-result h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--abc);
+}
+.search-result span{
+    color: var(--abc);
+}
+.search-result .small-text{
+    color: var(--wsc);
+}
+.search-result .card{
+    background: var(--wc);
+    min-height: 340px;
+    padding: 31px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 10px 25px 0px #00000040;
+}
+.search-result .view-btn a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 12px 36px;
+}
+
+/* PARKING VALET CSS */
+.parking-valet h5{
+    color: var(--wsc);
+}
+.parking-valet h6{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: var(--dgc);
+    text-transform: uppercase;
+}
+.parking-valet .valet-service{
+    background: var(--lnc);
+    border-radius: 4px;
+    padding: 18px;
+    min-height: 137px;
+}
+.parking-valet p{
+    font-weight: 700;
+    color: var(--abc);
+}
+
+/* ================================
+ VALET PARKING 
+================================ */
+.banner-two{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-two h3{
+    color: var(--wc);
+}
+.banner-two .overlay {
+    background: #717fffa6;
+}
+.valet-services{
+    background: var(--lnc);
+}
+.valet-services .p-card h5{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--dgc);
+}
+.valet-services .card-body{
+    min-height: 129px;
+}
+
+.booking-request{
+    background: var(--lnc);
+}
+.contact-form .custom-control{
+    width: 100%;
+    height: 65px;
+    background: var(--wc);
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+.contact-form .custom-control::placeholder{
+    color: var(--dgc);
+}
+
+.contact-form .form-select{
+    width: 100%;
+    height: 65px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+.contact-form button{
+    width: 100%;
+    height: 65px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--wc);
+    background: var(--irc);
+    border-radius: 8px;
+}
+
+/* ======================================
+    Booking Page CSS
+====================================== */
+.contactual-btn a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--wc);
+    background: var(--sc);
+    border: none;
+    padding: 13px 36px;
+    border-radius: 4px;
+}
+.banner-two .name h5{
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--wc);
+}
+.banner-two p{
+    color: var(--wc);
+}
+.banner-two .price h6{
+    color: var(--wc);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+.banner-two .price span{
+    color: var(--gc);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* =====================================
+    Booking/Parking Description
+===================================== */
+.parking-description .overlay {
+    background: #3d4271c4;
+}
+.parking-description{
+    background: var(--wc);
+}
+.parking-description h5{
+    color: var(--abc);
+}
+.parking-description h6{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--abc);
+}
+hr.features{
+    height: 2px;
+    background: #CCCCCC;
+}
+.features li h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--abc);
+    width: 40%;
+}
+.features li .small-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dgc);
+    width: 60%;
+}
+
+.booking-card {
+    border: 1px solid var(--gc);
+    border-radius: 10px;
+    padding: 25px 30px;
+    background: var(--wfc);
+}
+
+.book-space ul li p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    color: var(--dgc);
+    width: 50%;
+}
+.book-space .custom-control{
+    height: 40px;
+    background: #FAFAFA;
+    outline: none;
+    border: 1px solid var(--gc);
+    width: 50%;
+    padding-left: 10px;
+}
+.book-space .custom-control option{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dgc);
+}
+
+.book-summary ul li p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dgc);
+    width: 80%;
+}
+.book-summary ul li .amount{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dgc);
+    width: 20%;
+}
+.book-summary i{
+    color: var(--wsc);
+    font-size: 12px;
+}
+.book-summary ul li .form-ckeck{
+    color: var(--wsc);
+}
+
+.booking-btn button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--wc);
+    background: var(--sc);
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+.booking-card .phone i{
+    font-size: 22px;
+    color: var(--abc);
+}
+.booking-card .phone h5{
+    font-weight: 700;
+    color: var(--abc);
+}
+
+
+/* =====================================
+    CONTACT US CSS 
+===================================== */
+.contact-us{
+    background: var(--abc);
+}
+.contact-us h3{
+    color: var(--wc);
+}
+.contact-us h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--wc);
+}
+hr.contact{
+    height: 1px;
+    background: var(--sc);
+}
+.contact-us h6{
+    font-size: 24px;
+    color: var(--wc);
+}
+hr.menubefore{
+    height: 2px;
+    background: #ffffff;
+}
+
+.contact-us .address li{
+    list-style-type: none;
+}
+.contact-us .address i{
+    font-size: 22px;
+}
+/* contact form */
+.contact-us .contact-form label{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--wc);
+}
+.contact-us .contact-form button{
+    background: var(--wsc);
+}
+
+/* ===========================
+Login Page css 
+=========================== */
+/* LOGIN PART */
+.login-part{
+    background: #FFFFFF;
+}
+.login-card{
+    background: var(--abc);
+    border: none;
+}
+.login-card h3{
+    color: #FFFFFF;
+    font-size: 34px;
+}
+.login-card h6{
+    color: #FFFFFF;
+}
+.login-card button {
+    border: none;
+    background: var(--sc);
+    height: 50px;
+    width: 83%;
+    margin-left: 56px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--wc);
+}
+.login-card p {
+    color: #FFFFFF;
+}
+.login-card ul li {
+    height: 30px;
+    width: 30px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    line-height: 34px;
+    text-align: center;
+    margin: 0px 8px;
+    font-size: 24px;
+}
+.login-card ul li a{
+    color: #315db8;
+}
+.login-card .custom-form-control{
+    height: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--bc);
+}
+.login-card label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--wc);
+}
+.login-card .custom-form-control::placeholder{
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--gc);
+}
+/* LOGIN PART END */
+
+/* =============================
+Register page css 
+============================= */
+/* SIGN UP PART */
+.signin-part{
+    background: #FFFFFF;
+}
+.signin-card{
+    background: var(--abc);
+    border: none;
+}
+.signin-card h3{
+    color: #FFFFFF;
+    font-size: 34px;
+}
+.signin-card h6{
+    color: #FFFFFF;
+}
+.signin-card p {
+    color: #FFFFFF;
+}
+.signin-card label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--wc);
+}
+.signin-card button {
+    border: none;
+    background: var(--sc);
+    height: 50px;
+    width: 88%;
+    margin-left: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--wc;
+}
+/* ==============================
+user Dashboard CSS Here
+================================ */
+
+
+
+
+
+
+
+
+
