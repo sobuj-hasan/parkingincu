@@ -10,7 +10,10 @@ class Parkingspace extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'name',
+        'description',
+        'image',
         'country',
         'city',
         'post_code',
@@ -18,10 +21,9 @@ class Parkingspace extends Model
         'price_hourly',
         'price_day',
         'price_monthly',
-        'image',
-        'money_type',
         'money_type',
         'parking_type',
+        'space_type',
         'space_area',
         'cancellation_terms',
         'location',

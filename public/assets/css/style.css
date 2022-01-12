@@ -671,6 +671,7 @@ footer .input-group button{
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
+    text-transform: lowercase;
 }
 
 /* =====================================
@@ -732,6 +733,9 @@ hr.features{
     border: 1px solid var(--gc);
     width: 50%;
     padding-left: 10px;
+}
+.book-space .custom-control::placeholder{
+    color: #CCCCCC;
 }
 .book-space .custom-control option{
     font-weight: 400;

@@ -47,7 +47,7 @@
                                         </td>
 
                                         <td>
-                                            <img width="80px" src="{{ asset('assets/img/news_img/') }}/{{ $blog->image }}" alt="img" title="contact-img"/>
+                                            <img width="80px" src="{{ asset('assets/img/blog/') }}/{{ $blog->image }}" alt="img" title="contact-img"/>
                                         </td>
 
                                         <td>

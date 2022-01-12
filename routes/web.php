@@ -13,13 +13,17 @@ Route::get('/dashboard', function () {
     Route::get('/', [FrontendController::class, 'index'])->name('index');
     Route::get('subscribe', [FrontendController::class, 'subscribe'])->name('subscribe');
     Route::get('our/services', [FrontendController::class, 'service'])->name('service');
-    Route::get('space/booking', [FrontendController::class, 'spaceBooking'])->name('space.booking');
+    Route::get('space/booking/{slug}', [FrontendController::class, 'spaceBooking'])->name('space.booking');
     Route::get('search/result', [FrontendController::class, 'searchResult'])->name('search.result');
     Route::get('valet/parking', [FrontendController::class, 'valetParking'])->name('valet.parking');
     Route::get('contactus', [FrontendController::class, 'contactus'])->name('contactus');
     Route::get('aboutus', [FrontendController::class, 'aboutus'])->name('aboutus');
     Route::get('contact/message', [FrontendController::class, 'contactmessage'])->name('contact.message');
     Route::get('blog/details/{slug}', [FrontendController::class, 'blogdetails'])->name('blog.details');
+
+    Route::resources([
+        'space/booking' => 'OrderController',
+    ]);
 
     // Dashboard Routes
     Route::group(
@@ -51,6 +55,7 @@ Route::get('/dashboard', function () {
             'blogs' => 'BlogController',
             'admin/subscriber' => 'SubscribeController',
             'admin/visitor/querstion' => 'VisitorQueryController',
+            'parking/space' => 'ParkingspaceController',
         ]);
 
         Route::get('admin/profile', 'ProfileController@index')->name('admin.user.profile');

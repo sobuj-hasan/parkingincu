@@ -118,8 +118,8 @@
                             <li>
                                 <a href="javascript: void(0);"><i class="fas fa-car"></i> <span>Our Parking Space</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
-                                    <li><a href="#">Add New Space</a></li>
-                                    <li><a href="#">View All Space</a></li>
+                                    <li><a href="{{ route('space.create') }}">Add New Space</a></li>
+                                    <li><a href="{{ route('space.index') }}">View All Space</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -166,20 +166,14 @@
                                     <i class="fi-power"></i>   {{ __('Logout') }}
                                 </a>
                             </li>
-
                         </ul>
-
                     </div>
                     <!-- Sidebar -->
                     <div class="clearfix"></div>
-
                 </div>
                 <!-- Sidebar -left -->
-
             </div>
             <!-- Left Sidebar End -->
-
-
 
             <!-- ============================================================== -->
             <!-- Start right Content here -->
@@ -195,7 +189,7 @@
                 </div> <!-- content -->
 
                 <footer class="footer text-right">
-                    @php echo date('Y'); @endphp © SaudiHemam
+                    @php echo date('Y'); @endphp © Parking Incubator
                 </footer>
 
             </div>
@@ -239,6 +233,8 @@
         <script src="https://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
         <!-- Toastr Scripts render -->
         {!! Notify::message() !!}
+        {{-- All error show in Toaster --}}
+        @include('admin.layouts.validation_error')
 
         @yield('footer_script')
 

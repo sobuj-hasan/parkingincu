@@ -6,6 +6,7 @@ use App\Models\Blog;
 use App\Models\Subscribe;
 use Illuminate\Http\Request;
 use App\Models\ContactFormSubmit;
+use App\Models\Parkingspace;
 use Idemonbd\Notify\Facades\Notify;
 use Illuminate\Support\Facades\Auth;
 
@@ -28,12 +29,14 @@ class FrontendController extends Controller
         return view('service');
     }
 
-    public function spaceBooking(){
-        return view('booking');
+    public function spaceBooking($slug){
+        $data['single_space'] = Parkingspace::where('slug', $slug)->firstOrFail();
+        return view('booking', $data);
     }
 
     public function searchResult(){
-        return view('search_result');
+        $data['parking_spaces'] = Parkingspace::where('status', 1)->latest()->get();
+        return view('search_result', $data);
     }
 
     public function valetParking(){

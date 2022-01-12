@@ -62,135 +62,32 @@
             <div class="container">
                 <h6 class="mb-4">06 Are available near your location</h6>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
-                        <div class="card">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <img src="{{ asset('assets/img/icon/waltop-space.png') }}" alt="icon-img">
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6>Walton Parking space</h6>
-                                    <span>Riadah, Saudi Arabia</span>
-                                    <h4 class="mt-3 mb-4"> $100/ <span class="small-text">month</span></h4>
-                                    <p class="paragraph mb-4">
-                                        Residential carpark parking space with Fob and permit access. To be provied directly by the owner and upon a successfull
-                                        booking.
-                                    </p>
-                                    <div class="view-btn my-3">
-                                        <a class="" href="#">Book Now</a>
+                    @foreach ($parking_spaces as $parking_space)
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
+                            <div class="card">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <img src="{{ asset('assets/img/icon/waltop-space.png') }}" alt="icon-img">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6>{{ $parking_space->name }}</h6>
+                                        <span>{{ $parking_space->address }}, {{ $parking_space->city }}, {{ $parking_space->country }}</span>
+                                        <h4 class="mt-3 mb-4"> {{ $parking_space->price_monthly }}/<span class="small-text">month</span></h4>
+                                        <p class="paragraph mb-4">
+                                            Residential carpark parking space with Fob and permit access. To be provied directly by the owner and upon a successfull
+                                            booking.
+                                        </p>
+                                        <div class="view-btn my-3">
+                                            <a class="" href="{{ route('space.booking', $parking_space->slug) }}">Book Now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
-                        <div class="card">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <img src="{{ asset('assets/img/icon/city-spot.png') }}" alt="icon-img">
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6>City Parking spot</h6>
-                                    <span>Riadah city, Saudi Arabia</span>
-                                    <h4 class="mt-3 mb-4"> $150/ <span class="small-text">month</span></h4>
-                                    <p class="paragraph mb-4">
-                                        Residential carpark parking space with Fob and permit access. To be provied directly by the owner and upon a successfull
-                                        booking.
-                                    </p>
-                                    <div class="view-btn my-3">
-                                        <a class="" href="#">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
-                        <div class="card">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <img src="{{ asset('assets/img/icon/whileceel-rest.png') }}" alt="icon-img">
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6>Whileceel Rest & Valet Parking</h6>
-                                    <span>Mirza Turky Road, Saudi Arabia</span>
-                                    <h4 class="mt-3 mb-4"> $05/ <span class="small-text">per Hr</span></h4>
-                                    <p class="paragraph mb-4">
-                                        Residential carpark parking space with Fob and permit access. To be provied directly by the owner and upon a successfull
-                                        booking.
-                                    </p>
-                                    <div class="view-btn my-3">
-                                        <a class="" href="#">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
-                        <div class="card">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <img src="{{ asset('assets/img/icon/parking-space2.png') }}" alt="icon-img">
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6>Walton Parking space</h6>
-                                    <span>Riadah, Saudi Arabia</span>
-                                    <h4 class="mt-3 mb-4"> $100/ <span class="small-text">month</span></h4>
-                                    <p class="paragraph mb-4">
-                                        Residential carpark parking space with Fob and permit access. To be provied directly by the owner
-                                        and upon a successfull
-                                        booking.
-                                    </p>
-                                    <div class="view-btn my-3">
-                                        <a class="" href="#">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
-                        <div class="card">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <img src="{{ asset('assets/img/icon/parking-space3.png') }}" alt="icon-img">
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6>City Parking spot</h6>
-                                    <span>Riadah city, Saudi Arabia</span>
-                                    <h4 class="mt-3 mb-4"> $150/ <span class="small-text">month</span></h4>
-                                    <p class="paragraph mb-4">
-                                        Residential carpark parking space with Fob and permit access. To be provied directly by the owner
-                                        and upon a successfull
-                                        booking.
-                                    </p>
-                                    <div class="view-btn my-3">
-                                        <a class="" href="#">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
-                        <div class="card">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <img src="{{ asset('assets/img/icon/parking-space4.png') }}" alt="icon-img">
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h6>Whileceel Rest & Valet Parking</h6>
-                                    <span>Mirza Turky Road, Saudi Arabia</span>
-                                    <h4 class="mt-3 mb-4"> $05/ <span class="small-text">per Hr</span></h4>
-                                    <p class="paragraph mb-4">
-                                        Residential carpark parking space with Fob and permit access. To be provied directly by the owner
-                                        and upon a successfull
-                                        booking.
-                                    </p>
-                                    <div class="view-btn my-3">
-                                        <a class="" href="#">Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                    @empty($parking_space)
+                        <div class="alert alert-info text-danger">Nothing to show Parking Space</div>
+                    @endempty
                 </div>
             </div>
         </div>

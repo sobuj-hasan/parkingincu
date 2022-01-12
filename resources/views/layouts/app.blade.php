@@ -388,6 +388,14 @@
     <script src="https://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
     <!-- Toastr Scripts render -->
     {!! Notify::message() !!}
+    {{-- All error show in Toaster --}}
+    @if ($errors->any())
+        @foreach ($errors->all() as $error)
+        <script>
+            toastr.error(`{!! $error !!}`, 'Error')
+        </script>
+        @endforeach
+    @endif
 
 
 </body>

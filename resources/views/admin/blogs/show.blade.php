@@ -30,7 +30,7 @@
                             </tr>
                             <tr>
                                 <th>News Image</th>
-                                <td><img width="100" src="{{ asset('assets/img/news_img/') }}/{{ $blog->image }}" alt=""></td>
+                                <td><img width="100" src="{{ asset('assets/img/blog/') }}/{{ $blog->image }}" alt=""></td>
                             </tr>
                             <tr>
                                 <th>News Description</th>
