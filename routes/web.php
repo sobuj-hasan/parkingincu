@@ -20,6 +20,7 @@ Route::get('/dashboard', function () {
     Route::get('aboutus', [FrontendController::class, 'aboutus'])->name('aboutus');
     Route::get('contact/message', [FrontendController::class, 'contactmessage'])->name('contact.message');
     Route::get('blog/details/{slug}', [FrontendController::class, 'blogdetails'])->name('blog.details');
+    Route::post('neighbor/host', [FrontendController::class, 'neighborhost'])->name('neighbor.host');
 
     Route::resources([
         'space/booking' => 'OrderController',
@@ -32,7 +33,8 @@ Route::get('/dashboard', function () {
             Route::get('dashboard', 'UserDashboardController@index')->name('dashboard.index');
             Route::get('user/logout', 'UserDashboardController@logout')->name('user.logout');
             Route::resources([
-
+                'space/booked' => 'SpaceBookingController',
+                'transection/history' => 'TransectionController',
             ]);
 
             Route::get('user/profile', 'UserProfileController@index')->name('user.profile');
@@ -56,6 +58,7 @@ Route::get('/dashboard', function () {
             'admin/subscriber' => 'SubscribeController',
             'admin/visitor/querstion' => 'VisitorQueryController',
             'parking/space' => 'ParkingspaceController',
+            'neighbor/hostrequest' => 'NeighborHostController',
         ]);
 
         Route::get('admin/profile', 'ProfileController@index')->name('admin.user.profile');

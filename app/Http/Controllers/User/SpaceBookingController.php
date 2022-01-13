@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Carbon;
 
-class OrderController extends Controller
+class SpaceBookingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        return view('dashboard.booking.index');
     }
 
     /**
@@ -35,16 +35,7 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'uses_duration' => 'required|integer',
-            'uses_time' => 'required',
-            'started_date' => 'required',
-            'end_date' => '',
-            'total_cost' => '',
-        ]);
-
-        return $request->all();
-
+        //
     }
 
     /**

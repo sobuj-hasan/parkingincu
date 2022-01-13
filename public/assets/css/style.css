@@ -567,7 +567,7 @@ footer .input-group button{
     background: var(--lnc);
     border-radius: 4px;
     padding: 18px;
-    min-height: 137px;
+    min-height: 154px;
 }
 .parking-valet p{
     font-weight: 700;
@@ -616,7 +616,7 @@ footer .input-group button{
     border-radius: 5px;
 }
 .contact-form .custom-control::placeholder{
-    color: var(--dgc);
+    color: var(--gc);
 }
 
 .contact-form .form-select{
@@ -932,11 +932,191 @@ Register page css
     border-radius: 5px;
     font-weight: 500;
     font-size: 22px;
-    color: var(--wc;
+    color: var(--wc);
 }
 /* ==============================
 user Dashboard CSS Here
 ================================ */
+
+.dashboard{
+    background: #ffffff;
+}
+.dashboard .user-dashboard{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.dashboard .user-dashboard .left-side {
+    width: 100%;
+    height: auto;
+    background: #f7f8fa;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px -6px #00000033;
+    border-radius: 2px;
+}
+.dashboard .user-dashboard .left-side .profile{
+    text-align: center;
+}
+.dashboard .user-dashboard .left-side .profile img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #0c629c;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.dashboard .user-dashboard .left-side .profile h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #74408f;
+    line-height: 32px;
+}
+.dashboard .user-dashboard .left-side .profile p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #975563;
+    line-height: 32px;
+}
+.dashboard .user-dashboard .left-side .left-menu{
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+.dashboard .user-dashboard .left-side .left-menu ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10%;
+}
+.dashboard .user-dashboard .left-side .left-menu ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #74408f;
+    line-height: 32px;
+    text-decoration: none;
+}
+.dashboard .user-dashboard .left-side .left-menu ul li button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #74408f;
+    line-height: 32px;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+.dashboard .user-dashboard .left-side .left-menu .active {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    text-decoration: none;
+    background: #364a7b;
+}
+.dashboard .user-dashboard .left-side .left-menu .active a{
+    color: #ffffff;
+}
+.dashboard .user-dashboard .left-side .left-menu ul li:hover{
+    background: #364a7b;
+    transition: 0.3s;
+}
+.dashboard .user-dashboard .left-side .left-menu ul li:hover a{
+    color: #ffffff;
+    transition: 0.3s;
+}
+.dashboard .user-dashboard .left-side .left-menu ul li:hover button{
+    color: #ffffff;
+    transition: 0.3s;
+}
+.dashboard .information {
+    width: 100%;
+    height: auto;
+    background: #f7f8fa;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px -6px #00000033;
+    border-radius: 2px;
+}
+.dashboard .information h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #74408f;
+    line-height: 29px;
+    padding: 15px;
+}
+.dashboard .information .basic-information h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #74408f;
+    line-height: 0px;
+    padding: 15px;
+}
+.dashboard .information .basic-information .title ul li {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+}
+.dashboard .information .basic-information .title ul li p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1f2937;
+    line-height: 12px;
+}
+.dashboard .information .basic-information .answer ul li {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+}
+.dashboard .information .basic-information .answer ul li p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 12px;
+}
+.dashboard .information .personal-information h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #74408f;
+    line-height: 0px;
+    margin-top: 20px;
+    padding: 15px;
+}
+.dashboard .information .personal-information h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #74408f;
+}
+.dashboard .information .personal-information h5 {
+    font-size: 22px;
+    font-weight: 500;
+}
+.dashboard .information .personal-information .title ul li {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+}
+.dashboard .information .personal-information .title ul li p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1f2937;
+    line-height: 12px;
+}
+.dashboard .information .personal-information .answer ul li {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+}
+.dashboard .information .personal-information .answer ul li p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 12px;
+}
+hr.divider{
+    background-color: #FCCCCCCC;
+    height: 2px;
+}
+
+
+
+
+
+
+
 
 
 

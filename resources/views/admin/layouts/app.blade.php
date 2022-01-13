@@ -122,6 +122,14 @@
                                     <li><a href="{{ route('space.index') }}">View All Space</a></li>
                                 </ul>
                             </li>
+
+                            <li>
+                                <a href="javascript: void(0);"><i class="fas fa-people-arrows"></i> <span>Neighbor Host</span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="{{ route('hostrequest.index') }}">View Neighbor Host Request</a></li>
+                                </ul>
+                            </li>
+
                             <li>
                                 <a href="javascript: void(0);"><i class="fas fa-sitemap"></i> <span> Blog Category </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">

@@ -8,42 +8,40 @@
                 <div class="banner-content mx-lg-5 px-lg-5">
                     <h1 class="px-lg-5">Find the <strong>Parking</strong> Space, Forget the <strong>Mental Stress</strong></h1>
                     <div class="search-bar my-5">
-                        <form action="#" method="post" novalidate="novalidate">
+                        <form method="GET" action="{{ route('search.result') }}" novalidate="novalidate">
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="row">
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <select class="search-slt" name="">
-                                                <option>Type Of Service</option>
-                                                <option>Example one</option>
-                                                <option>Example one</option>
-                                                <option>Example one</option>
-                                                <option>Example one</option>
-                                                <option>Example one</option>
-                                                <option>Example one</option>
+                                            <select class="search-slt" name="parking_space">
+                                                <option value="">Select Parking Space</option>
+                                                @foreach ($parking_spaces as $space)
+                                                    <option value="{{ $space->name }}">{{ $space->name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <select class="search-slt" name="">
-                                                <option>Select Location</option>
-                                                <option>Example one</option>
-                                                <option>Example one</option>
-                                                <option>Example one</option>
-                                                <option>Example one</option>
-                                                <option>Example one</option>
-                                                <option>Example one</option>
+                                            <select class="search-slt" name="parking_city">
+                                                <option value="">Select Parking City</option>
+                                                @foreach ($parking_spaces as $space)
+                                                    <option value="{{ $space->city }}">{{ $space->city }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-12 p-0">
-                                            <input type="text" class="search-slt" placeholder="Type Your Name" name="">
+                                            <select class="search-slt" name="parking_address">
+                                                <option value="">Select Address</option>
+                                                @foreach ($parking_spaces as $space)
+                                                    <option value="{{ $space->address }}">{{ $space->address }}</option>
+                                                @endforeach
+                                            </select>
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-12 p-0">
-                                            <input type="text" class="search-slt last-input" placeholder="Phone Number" name="">
+                                            <input type="text" class="search-slt last-input" placeholder="Phone Number" value="{{ old('phone') }}" name="phone">
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-12 p-0">
-                                            <a href="{{ route('search.result') }}">
-                                                <button type="button" class="wrn-btn">Find Space</button>
-                                            </a>
+                                            <button type="submit" class="wrn-btn">Find Space</button>
                                         </div>
                                     </div>
                                 </div>

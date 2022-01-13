@@ -1,39 +1,16 @@
 @extends('layouts.app')
 @section('title', 'User Profile Edit')
+@section('active_profile_edit')
+    active
+@endsection
 @section('content')
     <section class="dashboard">
         <div class="container">
             <div class="user-dashboard">
                 <div class="row">
                     <!-- Dashboard left bar Here ! -->
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <div class="left-side">
-                            <div class="profile">
-                                <img src="{{ asset('assets/img/users/') }}/{{ Auth::user()->profile_photo }}" alt="">
-                                <h3>{{ Auth::user()->name }}</h3>
-                                <p>{{ Auth::user()->phone }}</p>
-                                <div class="btn">
-                                    <a class="btn btn-outline-info" href="{{ route('user.profile.edit') }}"><i class="far fa-edit"></i> profile edit </a>
-                                </div>
-                            </div>
-                            <div class="left-menu">
-                                <ul>
-                                    <li class="active">
-                                        <a href="{{ route('dashboard.index') }}"><i class="fas fa-id-card"></i>&nbsp; Dashboard </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="{{ route('user.setting') }}"><i class="fas fa-user-alt"></i>&nbsp; Profile Settings</a>
-                                    </li>
-                                    <li>
-                                    <form method="POST" action="{{ route('logout') }}">
-                                        @csrf
-                                        <button><i class="fas fa-sign-out-alt"></i> Logout</button>
-                                    </form>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    @include('dashboard.layouts.left_sidebar')
+
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                         <style>
                             .card-box{
@@ -41,7 +18,7 @@
                             }
                         </style>
                         <div class="card-box p-4">
-                            <h4 class="m-t-0 m-b-30 header-title">Edit Profile <a class="btn btn-sm btn-info float-right" href="{{ route('dashboard.index') }}" title=""> < Back Profile </a></h4>
+                            <h4 class="m-t-0 m-b-30 header-title"><strong>Edit Profile</strong> <a class="btn btn-sm btn-info float-right" href="{{ route('dashboard.index') }}" title=""> < Back Profile </a></h4>
 
                                 <form role="form" method="post" action="{{ route('user.profile.update') }}" enctype="multipart/form-data">
                                 @csrf

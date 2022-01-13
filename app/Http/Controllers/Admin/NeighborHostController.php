@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Models\Neighborhost;
 use Illuminate\Http\Request;
-use Illuminate\Support\Carbon;
+use Idemonbd\Notify\Facades\Notify;
+use App\Http\Controllers\Controller;
 
-class OrderController extends Controller
+class NeighborHostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +16,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        $data['hostrequests'] = Neighborhost::all();
+        return view('admin.neighbor.index', $data);
     }
 
     /**
@@ -35,16 +38,7 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'uses_duration' => 'required|integer',
-            'uses_time' => 'required',
-            'started_date' => 'required',
-            'end_date' => '',
-            'total_cost' => '',
-        ]);
-
-        return $request->all();
-
+        //
     }
 
     /**
@@ -55,7 +49,8 @@ class OrderController extends Controller
      */
     public function show($id)
     {
-        //
+        $data['neighborhost'] = Neighborhost::where('id', $id)->firstOrFail();
+        return view('admin.neighbor.show', $data);
     }
 
     /**
@@ -89,6 +84,8 @@ class OrderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Neighborhost::where('id', $id)->delete();
+        Notify::info('This Host Request Deleted', 'Deleted');
+        return back();
     }
 }

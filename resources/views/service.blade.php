@@ -171,47 +171,52 @@
                 <div class="col-12">
                     <h5 class="mb-3 text-center">Add Your Space to Our Platform</h5>
                     <h6 class="text-center">Send Host Request</h6>
-                    <form action="">
+                    <form method="POST" action="{{ route('neighbor.host') }}">
+                        @csrf
                         <div class="contact-form py-5">
                             <div class="row">
                                 <div class="col-md-4 my-3">
-                                    <input type="email" class="custom-control" placeholder="Full Name " name="name">
+                                    <input type="text" class="custom-control" placeholder="Full Name" value="{{ old('name') }}" name="name">
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <input type="email" class="custom-control" placeholder="Contact Number " name="phone">
+                                    <input type="text" class="custom-control" placeholder="Contact Number" value="{{ old('phone') }}" name="phone">
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <input type="email" class="custom-control" placeholder="Email Address " name="email">
+                                    <input type="email" class="custom-control" placeholder="Email Address" value="{{ old('email') }}" name="email">
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <select class="form-select" name="">
-                                        <option selected>What do you need?</option>
-                                        <option value="1">Monthly Parking Package</option>
-                                        <option value="2">Monthly Parking Package</option>
-                                        <option value="3">Monthly Parking Package</option>
+                                    <input type="text" class="custom-control" placeholder="Parking Space Country" value="{{ old('country') }}" name="country">
+                                </div>
+                                <div class="col-md-4 my-3">
+                                    <input type="text" class="custom-control" placeholder="Parking Space City" value="{{ old('city') }}" name="city">
+                                </div>
+                                <div class="col-md-4 my-3">
+                                    <input type="text" class="custom-control" placeholder="Parking Space Address" value="{{ old('address') }}" name="address">
+                                </div>
+                                <div class="col-md-4 my-3">
+                                    <input type="text" class="custom-control" placeholder="Parking Rate (Per day)" value="{{ old('parking_rate') }}" name="parking_rate">
+                                </div>
+                                <div class="col-md-4 my-3">
+                                    <select class="form-select" name="money_type">
+                                        <option value="" selected>--- Select Money Type ---</option>
+                                        <option value="Contactual">Contactual</option>
+                                        <option value="NonContactual">NonContactual</option>
+                                        <option value="Others">Others</option>
                                     </select>
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <select class="form-select" name="">
-                                        <option selected>Location </option>
-                                        <option value="1">Monthly Parking Package</option>
-                                        <option value="2">Monthly Parking Package</option>
-                                        <option value="3">Monthly Parking Package</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 my-3">
-                                    <select class="form-select" name="">
-                                        <option selected>Inquery type </option>
-                                        <option value="1">Monthly Parking Package</option>
-                                        <option value="2">Monthly Parking Package</option>
-                                        <option value="3">Monthly Parking Package</option>
+                                    <select class="form-select" name="parking_type">
+                                        <option value="" selected>--- Select Parking Type ---</option>
+                                        <option value="Residencial">Residencial</option>
+                                        <option value="Normal">Normal</option>
+                                        <option value="Others">Others</option>
                                     </select>
                                 </div>
                                 <div class="col-md-12 my-3">
-                                    <textarea style="height: 230px;" class="custom-control" name="" cols="30" placeholder="Write The Message " rows="10"></textarea>
+                                    <textarea style="height: 230px;" class="custom-control" name="message" cols="30" placeholder="Write Parking Host Message" rows="10">{{ old('message') }}</textarea>
                                 </div>
                                 <div class="col-md-4 mt-3">
-                                    <button type="submit"> Send Request </button>
+                                    <button type="submit"> Send Neighbor Host Request </button>
                                 </div>
                             </div>
                         </div>

@@ -1,39 +1,16 @@
 @extends('layouts.app')
 @section('title', 'Dashboard')
+@section('active_profile')
+    active
+@endsection
 @section('content')
     <section class="dashboard">
         <div class="container">
             <div class="user-dashboard">
                 <div class="row">
                     <!-- Dashboard left bar Here ! -->
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="left-side">
-                        <div class="profile">
-                            <img src="{{ asset('assets/img/users/') }}/{{ Auth::user()->profile_photo }}" alt="">
-                            <h3>{{ Auth::user()->name }}</h3>
-                            <p>{{ Auth::user()->phone }}</p>
-                            <div class="btn">
-                                <a class="btn btn-outline-info" href="{{ route('user.profile.edit') }}"><i class="far fa-edit"></i> profile edit </a>
-                            </div>
-                        </div>
-                        <div class="left-menu">
-                            <ul>
-                                <li class="active">
-                                    <a href="{{ route('dashboard.index') }}"><i class="fas fa-id-card"></i>&nbsp; Dashboard </a>
-                                </li>
-                                <li class="">
-                                    <a href="{{ route('user.setting') }}"><i class="fas fa-user-alt"></i>&nbsp; Profile Settings</a>
-                                </li>
-                                <li>
-                                <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
-                                    <button><i class="fas fa-sign-out-alt"></i> Logout</button>
-                                </form>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
+                    @include('dashboard.layouts.left_sidebar')
+
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="information">
                         <h6><strong>Saudi Hemam:</strong><span> Lorem ipsum dolor sit amit We are also able to do work </span></h6>
