@@ -61,7 +61,7 @@ class BlogController extends Controller
             $photo_name = time() . $request->id . '.' . $request->image->extension();
             $request->image->move('assets/img/blog/', $photo_name);
             $blog->image = $photo_name;
-        }    
+        }
         $blog->save();
         Notify::success('Blog Successfully Published', 'Success');
         return redirect('blogs');

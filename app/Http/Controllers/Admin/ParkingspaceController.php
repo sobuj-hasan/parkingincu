@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Idemonbd\Notify\Facades\Notify;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Intervention\Image\Facades\Image;
 
 class ParkingspaceController extends Controller
 {
@@ -56,19 +57,24 @@ class ParkingspaceController extends Controller
             'space_area' => 'required|string',
             'cancellation_terms' => 'required|string',
             'location' => 'required|string',
-            'image' => 'required',
+            'image' => 'required|mimes:jpg,jpeg,png,gif,svg,webp|max:2000',
+            'icon_image' => 'required|mimes:jpg,jpeg,png,gif,svg,webp|max:2000',
         ]);
+        
         $parkingspace = Parkingspace::create($request->all() + [
             'user_id' => Auth::id(),
             'status' => 1,
         ]);
-
         $parkingspace->slug = Str::slug($request->name) . '-' . Str::random(5);
-
         if ($request->hasFile('image')) {
-            $photo_name = $request->id . '.' . $request->image->extension();
+            $photo_name = time() . $request->id . '.' . $request->image->extension();
             $request->image->move('assets/img/parking_img/', $photo_name);
             $parkingspace->image = $photo_name;
+        }
+        if ($request->hasFile('icon_image')) {
+            $photo_name = time() . $request->id . Str::random(3) . '.' . $request->icon_image->extension();
+            $request->icon_image->move('assets/img/parking_img/', $photo_name);
+            $parkingspace->icon_image = $photo_name;
         }
         $parkingspace->save();
         Notify::success('Parking Space Successfully Published', 'Success');
@@ -83,7 +89,8 @@ class ParkingspaceController extends Controller
      */
     public function show($id)
     {
-        return view('admin.parking_space.show');
+        $parkingspaces = Parkingspace::where('id', $id)->firstOrFail();
+        return view('admin.parking_space.show', compact('parkingspaces'));
     }
 
     /**
@@ -117,6 +124,8 @@ class ParkingspaceController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Parkingspace::where('id', $id)->first()->delete();
+        Notify::info('This Parkingspace Deleted', 'Deleted');
+        return back();
     }
 }

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Auth;
 class FrontendController extends Controller
 {
     public function index(){
-        $data['blogs'] = Blog::inRandomOrder()->limit(4)->get();
+        $data['blogs'] = Blog::inRandomOrder()->limit(3)->get();
         return view('index', $data);
     }
     
@@ -45,7 +45,7 @@ class FrontendController extends Controller
 
     public function blogdetails($slug){
         $data['single_blog'] = Blog::where('slug', $slug)->firstOrFail();
-        $data['related_blog'] = Blog::where('category_id', $data['single_blog']->category_id)->where('id', '!=', $data['single_blog']->id)->limit(4)->get();
+        $data['related_blog'] = Blog::where('category_id', $data['single_blog']->category_id)->where('id', '!=', $data['single_blog']->id)->limit(3)->get();
         return view('blog_details', $data);
     }
 

@@ -21,7 +21,7 @@
                     <div class="modal-header">
                         <h4 class="modal-title">Create Parking Space</h4>
                     </div>
-                    <form method="POST" action="{{ route('space.store') }}">
+                    <form method="POST" action="{{ route('space.store') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="modal-body">
                             <div class="row">
@@ -107,16 +107,6 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="field-1" class="control-label">Image <span class="text-light"> &nbsp;(Preferable width : 580px Height: 330px)</span></label><br>
-                                    <button type="button" class="btn btn-secondary btn-file">
-                                        <input type="file" class="btn-secondary" name="image" />
-                                    </button><br>
-                                    @error('image')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
-
-                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="field-1" class="control-label">Money Type</label>
                                         <select class="form-control" name="money_type">
@@ -189,6 +179,26 @@
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                     </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="field-1" class="control-label">Image <span class="text-light"> &nbsp;(Preferable width : 580px Height: 330px)</span></label><br>
+                                    <button type="button" class="btn btn-secondary btn-file">
+                                        <input type="file" class="btn-secondary" name="image" />
+                                    </button><br>
+                                    @error('image')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="field-1" class="control-label">Parking Icon Image <span class="text-light"> &nbsp;(Preferable width : 60px Height: 60px)</span></label><br>
+                                    <button type="button" class="btn btn-secondary btn-file">
+                                        <input type="file" class="btn-secondary" name="icon_image" />
+                                    </button><br>
+                                    @error('icon_image')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    {{-- <h6>Icon Image Demo:</h6>
+                                    <img style="border: 1px solid red; padding: 20px;" src="{{ asset('assets/img/icon/city-spot.png') }}" alt="icon-img"> --}}
                                 </div>
                             </div>
                         </div>

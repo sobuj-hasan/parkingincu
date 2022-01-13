@@ -14,6 +14,7 @@ class Parkingspace extends Model
         'name',
         'description',
         'image',
+        'icon_image',
         'country',
         'city',
         'post_code',

@@ -73,7 +73,8 @@
                                             @csrf
                                             @method('DELETE')
                                             <td>
-                                                <a href="{{ route('space.edit', $parking->id) }}" class="table-action-btn"> <i class="far fa-edit"></i> </a>
+                                                {{-- {{ route('space.edit', $parking->id) }} --}}
+                                                <a href="" class="table-action-btn"> <i class="far fa-edit"></i> </a>
                                                 <button onclick="blogDelete()" style="border: none; background:none; cursor:pointer;" type="submit" name="submit" class="table-action-btn"><i class="mdi mdi-close"></i></button>
                                             </td>
                                         </form>

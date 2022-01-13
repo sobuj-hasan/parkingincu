@@ -27,6 +27,7 @@ class CreateParkingspacesTable extends Migration
             $table->string('price_day')->nullable();
             $table->string('price_monthly')->nullable();
             $table->string('image')->nullable();
+            $table->string('icon_image')->nullable();
             $table->string('money_type')->nullable();
             $table->string('parking_type');
             $table->string('space_type');
