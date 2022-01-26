@@ -280,19 +280,19 @@
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="valet_parking.html">Parking Management System</a>
+                                <a class="ms-2" href="{{ route('valet.parking') }}">Parking Management System</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="booking.html">Become Neighbor Host</a>
+                                <a class="ms-2" href="{{ route('service') }}#booking-request">Become Neighbor Host</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="valet_parking.html">Property Management</a>
+                                <a class="ms-2" href="{{ route('service') }}">Property Management</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="search_result.html">Land Rental Management</a>
+                                <a class="ms-2" href="{{ route('aboutus') }}">Land Rental Management</a>
                             </li>
                         </ul>
                     </div>
@@ -303,23 +303,23 @@
                         <ul>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="login.html">Account</a>
+                                <a class="ms-2" href="{{ route('login') }}">Account</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="booking.html">Service Page</a>
+                                <a class="ms-2" href="{{ route('service') }}">Service Page</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="index.html#latest-blog">Blog Page</a>
+                                <a class="ms-2" href="{{ route('index') }}#latest-blog">Blog Page</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="contactus.html">Contact Page</a>
+                                <a class="ms-2" href="{{ route('contactus') }}">Contact Page</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="aboutus.html">How it work</a>
+                                <a class="ms-2" href="{{ route('aboutus') }}">How it work</a>
                             </li>
                         </ul>
                     </div>

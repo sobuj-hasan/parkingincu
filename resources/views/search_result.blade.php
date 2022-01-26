@@ -16,7 +16,7 @@
                                     <div class="row">
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                             <select class="search-slt" name="parking_space">
-                                                <option value="">Select Parking Space</option>
+                                                <option value="">@if (request('parking_space')) {{ request('parking_space') }} @else Select Parking Space @endif</option>
                                                 @foreach ($parking_spaces as $space)
                                                     <option value="{{ $space->name }}">{{ $space->name }}</option>
                                                 @endforeach
@@ -24,7 +24,7 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                             <select class="search-slt" name="parking_city">
-                                                <option value="">Select Parking City</option>
+                                                <option value="">@if (request('parking_city')) {{ request('parking_space') }} @else Select Parking City @endif</option>
                                                 @foreach ($parking_spaces as $space)
                                                     <option value="{{ $space->city }}">{{ $space->city }}</option>
                                                 @endforeach
@@ -32,14 +32,14 @@
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-12 p-0">
                                             <select class="search-slt" name="parking_address">
-                                                <option value="">Select Address</option>
+                                                <option value="">@if (request('parking_address')) {{ request('parking_space') }} @else Select Address @endif</option>
                                                 @foreach ($parking_spaces as $space)
                                                     <option value="{{ $space->address }}">{{ $space->address }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-12 p-0">
-                                            <input type="text" class="search-slt last-input" placeholder="Phone Number" value="{{ old('phone') }}" name="phone">
+                                            <input type="text" class="search-slt last-input" placeholder="Phone Number" value="{{ request('phone') }}" name="phone">
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-12 p-0">
                                             <button type="submit" class="wrn-btn">Find Space</button>
