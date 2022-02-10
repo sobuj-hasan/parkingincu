@@ -8,8 +8,8 @@
                 <div class="page-title-box">
                     <h4 class="page-title float-left">Users</h4>
                     <ol class="breadcrumb float-right">
-                        <li class="breadcrumb-item"><a href="#">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="#">User List</a></li>
+                        <li class="breadcrumb-item"><a href="">Admin</a></li>
+                        <li class="breadcrumb-item"><a href="">User List</a></li>
                     </ol>
 
                     <div class="clearfix"></div>
