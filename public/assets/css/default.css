@@ -1,3 +1,5 @@
+@import url("./fonts.css");
+
 :root {
     --lbc: #333333;
     --dgc: #555555;
@@ -21,7 +23,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gothic', 'Molarabic';
     font-weight: 400;
     font-size: 14px;
     color: var(--wc);

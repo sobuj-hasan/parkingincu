@@ -1,3 +1,12 @@
+/* Arabic Css Here */
+@import url("./fonts.css");
+
+body {
+    font-family: 'Gothic', 'Molarabic';
+    font-weight: 600;
+}
+
+
 
 .menubar ul{
     text-align: left;
