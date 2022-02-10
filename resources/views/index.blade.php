@@ -6,7 +6,7 @@
         <div class="overlay py-lg-5">
             <div class="container text-center">
                 <div class="banner-content mx-lg-5 px-lg-5">
-                    <h1 class="px-lg-5">Find the <strong>Parking</strong> Space, Forget the <strong>Mental Stress</strong></h1>
+                    <h1 class="px-lg-5">@lang('home.find_the') <strong>@lang('home.parking')</strong> @lang('home.space_forget_the')<strong>@lang('home.mental_stress')</strong></h1>
                     <div class="search-bar my-5">
                         <form method="GET" action="{{ route('search.result') }}" novalidate="novalidate">
                             @csrf
@@ -15,7 +15,7 @@
                                     <div class="row">
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                             <select class="search-slt" name="parking_space">
-                                                <option value="">Select Parking Space</option>
+                                                <option value="">@lang('home.select_parking_space')</option>
                                                 @foreach ($parking_spaces as $space)
                                                     <option value="{{ $space->name }}">{{ $space->name }}</option>
                                                 @endforeach
@@ -23,7 +23,7 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                             <select class="search-slt" name="parking_city">
-                                                <option value="">Select Parking City</option>
+                                                <option value="">@lang('home.select_parking_city')</option>
                                                 @foreach ($parking_spaces as $space)
                                                     <option value="{{ $space->city }}">{{ $space->city }}</option>
                                                 @endforeach
@@ -31,17 +31,17 @@
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-12 p-0">
                                             <select class="search-slt" name="parking_address">
-                                                <option value="">Select Address</option>
+                                                <option value="">@lang('home.select_address')</option>
                                                 @foreach ($parking_spaces as $space)
                                                     <option value="{{ $space->address }}">{{ $space->address }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-12 p-0">
-                                            <input type="text" class="search-slt last-input" placeholder="Phone Number" value="{{ old('phone') }}" name="phone">
+                                            <input type="text" class="search-slt last-input" placeholder="@lang('home.phone_number')" value="{{ old('phone') }}" name="phone">
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-12 p-0">
-                                            <button type="submit" class="wrn-btn">Find Space</button>
+                                            <button type="submit" class="wrn-btn">@lang('home.find_space')</button>
                                         </div>
                                     </div>
                                 </div>
@@ -65,8 +65,8 @@
                                 <img src="assets/img/icon/facilities.png" alt="icon-img">
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                <h5>Cheap Cost, Much Facilities</h5>
-                                <p class="paragraph">There are many variations of passages of Lorem Ipsum available</p>
+                                <h5>@lang('home.Cheap_Cost_Much_Facilities')</h5>
+                                <p class="paragraph">@lang('home.Cheap_Cost_Much_Facilities_article')</p>
                             </div>
                         </div>
                     </div>
@@ -78,8 +78,8 @@
                                 <img src="assets/img/icon/save-monay.png" alt="icon-img">
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                <h5>Save the Money</h5>
-                                <p class="paragraph">There are many variations of passages of Lorem Ipsum available</p>
+                                <h5>@lang('home.save_the_money')</h5>
+                                <p class="paragraph">@lang('home.save_the_money_article')</p>
                             </div>
                         </div>
                     </div>
@@ -91,8 +91,8 @@
                                 <img src="assets/img/icon/security-safety.png" alt="icon-img">
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                <h5>100% Security & Support</h5>
-                                <p class="paragraph">There are many variations of passages of Lorem Ipsum available</p>
+                                <h5>@lang('home.Security_Support')</h5>
+                                <p class="paragraph">@lang('home.Security_Support_article')</p>
                             </div>
                         </div>
                     </div>
@@ -110,13 +110,8 @@
                     <img class="img-fluid" src="assets/img/photos/We-are-Ready-to-Parking-Space.png" alt="img">
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                    <h2 class="section-header">We are Ready to <span>Parking</span> Space</h2>
-                    <p class="paragraph mt-4">Parking lots tend to be sources of water pollution because of their extensive impervious surfaces. Most existing lots
-                    have limited or no facilities to control runoff. Many areas today also require minimum landscaping in parking lots to
-                    provide.<br><br>
-                    
-                    Many municipalities require a minimum number of parking spaces, depending on the floor area in a store or the number of
-                    bedrooms in an apartment complex. In the US, each state's Department of Transportation sets the ratio.</p>
+                    <h2 class="section-header">@lang('home.we_are_ready_to') <span>@lang('home.parking')</span> @lang('home.space')</h2>
+                    <p class="paragraph mt-4">@lang('home.parking_space_article')</p>
                 </div>
             </div>
         </div>
@@ -127,28 +122,25 @@
     <section class="our-service py-lg-5">
         <div class="container pt-3">
             <div class="section-title text-center mb-5">
-                <h3 class="pb-lg-5">Our Services</h3>
+                <h3 class="pb-lg-5">@lang('home.our_services')</h3>
             </div>
             <div class="row justify-content-center">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-3">
                     <div class="card p-card">
                         <img src="assets/img/photos/Management.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Management </h5>
+                            <h5 class="mt-2 mb-3">@lang('home.management') </h5>
                             <li class="small-text pt-3 my-3">
-                                Event Crowd Management
+                                @lang('home.service_one_listone')
                             </li>
                             <li class="small-text my-3">
-                                Land & Property Management
+                                @lang('home.service_one_listtwo')
                             </li>
                             <li class="small-text my-3">
-                                Parking Facility Management
-                            </li>
-                            <li class="small-text pb-3 my-3">
-                                Rate Management
+                                @lang('home.service_one_listthree')
                             </li>
                             <div class="view-btn my-3">
-                                <a class="" href="{{ route('service') }}">View All</a>
+                                <a class="" href="{{ route('service') }}">@lang('home.view_all')</a>
                             </div>
                         </div>
                     </div>
@@ -157,21 +149,21 @@
                     <div class="card p-card">
                         <img src="assets/img/photos/Technical-Operation.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Technical Operation</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.technical_operation')</h5>
                             <li class="small-text pt-3 my-3">
-                                Cashier Booth & Pos Operator
+                                @lang('home.service_two_listone')
                             </li>
                             <li class="small-text my-3">
-                                Pay on Foot & Ticketing Assistant
+                                @lang('home.service_two_listtwo')
                             </li>
                             <li class="small-text my-3">
-                                Transportation Dispatching
+                                @lang('home.service_two_listthree')
                             </li>
                             <li class="small-text pb-3 my-3">
-                                Control Operation
+                                @lang('home.service_two_listfour')
                             </li>
                             <div class="view-btn my-3">
-                                <a class="" href="{{ route('service') }}">View All</a>
+                                <a class="" href="{{ route('service') }}">@lang('home.view_all')</a>
                             </div>
                         </div>
                     </div>
@@ -180,21 +172,21 @@
                     <div class="card p-card">
                         <img src="assets/img/photos/Invest-&-Development.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Invest & Development </h5>
+                            <h5 class="mt-2 mb-3">@lang('home.invest_development')</h5>
                             <li class="small-text pt-3 my-3">
-                                Systems & Equipment Investments
+                                @lang('home.service_three_listone')
                             </li>
                             <li class="small-text my-3">
-                                Master Plan & Design
+                                @lang('home.service_three_listtwo')
                             </li>
                             <li class="small-text my-3">
-                                Equipment & Systems Procurement
+                                @lang('home.service_three_listthree')
                             </li>
                             <li class="small-text pb-3 my-3">
-                                Civil Works & Installation
+                                @lang('home.service_three_listfour')
                             </li>
                             <div class="view-btn my-3">
-                                <a class="" href="{{ route('service') }}">View All</a>
+                                <a class="" href="{{ route('service') }}">@lang('home.view_all')</a>
                             </div>
                         </div>
                     </div>
@@ -203,21 +195,21 @@
                     <div class="card p-card">
                         <img src="assets/img/photos/Supplementary-Service.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Supplementary Service</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.Supplementary_Service')</h5>
                             <li class="small-text pt-3 my-3">
-                                Taxi, Limousine & Busing
+                                @lang('home.service_four_listone')
                             </li>
                             <li class="small-text my-3">
-                                Golf Cart Transportation
+                                @lang('home.service_four_listtwo')
                             </li>
                             <li class="small-text my-3">
-                                Parking Advertisement
+                                @lang('home.service_four_listthree')
                             </li>
                             <li class="small-text pb-3 my-3">
-                                Rental & Car Sharing
+                                @lang('home.service_four_listfour')
                             </li>
                             <div class="view-btn my-3">
-                                <a class="" href="{{ route('service') }}">View All</a>
+                                <a class="" href="{{ route('service') }}">@lang('home.view_all')</a>
                             </div>
                         </div>
                     </div>
@@ -226,7 +218,7 @@
             <div class="more-service text-center mt-lg-5 py-2">
                 <a href="{{ route('service') }}">
                     <i class="fas fa-arrow-down"></i><br><br>
-                    <span>More Service</span>
+                    <span>@lang('home.see_more')</span>
                 </a>
             </div>
         </div>
@@ -238,15 +230,16 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
-                    <h5>Valet Parking</h5>
-                    <h2 class="section-header">SERVICE AT YOUR DOOR STEP</h2>
-                    <p class="paragraph mt-4">Valet Parking Service for Your Hotel, Special Event, Wedding or Night Club.
-                    <br><br>
-                    Parking Response provides Valet Parking to Restaurants, Lounges & Nightclubs, Retail Centers and we also do Corporate
-                    Events and more. If you have an auto dealership and need to provide valet service to your clientele, call us. We are
-                    specialists at valet parking, and we provide it fast, efficiently and professional.</p>
+                    <h5>@lang('home.valet_parking')</h5>
+                    <h2 class="section-header">@lang('home.Service_at_your_doorstep')</h2>
+                    <p class="paragraph mt-4">@lang('home.service_at_your_door_text')</p>
+                    <p class="paragraph mt-4">@lang('home.service_at_your_door_text2')</p>
+                    <p class="paragraph mt-4">@lang('home.service_at_your_door_text3')</p>
+                    <p class="paragraph mt-4">@lang('home.service_at_your_door_text4')</p>
+                    <p class="paragraph mt-4">@lang('home.service_at_your_door_text5')</p>
+                    <p class="paragraph mt-4">@lang('home.service_at_your_door_text6')</p>
                     <div class="view-btn pt-4 mb-3">
-                        <a href="{{ route('service') }}#booking-request">Contact with us</a>
+                        <a href="{{ route('service') }}#booking-request">@lang('home.contact_us')</a>
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 align-self-center">
@@ -256,19 +249,18 @@
         </div>
     </section>
     <!-- VALET PARKING -->
-
     <!-- VALET SERVICE PART START -->
     <section class="our-service valet-service py-lg-5 py-2">
         <div class="container pt-3">
             <div class="section-title text-center mb-lg-5">
-                <h3 class="pb-5">Valet Parking</h3>
+                <h3 class="pb-5">@lang('home.valet_parking')</h3>
             </div>
             <div class="row justify-content-center">
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-3">
                     <div class="card p-card">
                         <img src="assets/img/photos/valet_parking/wedding.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Valet Parking for Wedding</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.valet_parking1')</h5>
                         </div>
                     </div>
                 </div>
@@ -276,7 +268,7 @@
                     <div class="card p-card">
                         <img src="assets/img/photos/valet_parking/restaurant.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Valet Parking for Restaurants</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.valet_parking2')</h5>
                         </div>
                     </div>
                 </div>
@@ -284,7 +276,7 @@
                     <div class="card p-card">
                         <img src="assets/img/photos/valet_parking/nightclubs.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Valet Parking for Lounges & Nightclubs</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.valet_parking3')</h5>
                         </div>
                     </div>
                 </div>
@@ -292,7 +284,7 @@
                     <div class="card p-card">
                         <img src="assets/img/photos/valet_parking/corporate-event.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Valet Parking for Corporate Events</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.valet_parking4')</h5>
                         </div>
                     </div>
                 </div>
@@ -300,7 +292,7 @@
             <div class="more-service text-center mt-lg-5">
                 <a href="{{ route('valet.parking') }}">
                     <i class="fas fa-arrow-down"></i><br><br>
-                    <span>More Service</span>
+                    <span>@lang('home.see_more')</span>
                 </a>
             </div>
         </div>
@@ -318,8 +310,8 @@
     <!-- LATEST BLOG -->
     <section id="latest-blog" class="latest-blog my-2 my-lg-4">
         <div class="container pt-3 pb-lg-5">
-            <h5>Media Center</h5>
-            <h3>Latest Blog</h3>
+            <h5>@lang('home.media_center')</h5>
+            <h3>@lang('home.latest_blog')</h3>
             <hr class="latest-blog">
             <div class="row justify-content-center">
                 @foreach ($blogs as $blog)
@@ -330,7 +322,7 @@
                                 <span>{{ $blog->created_at->format('d M Y') }}</span>
                                 <h5 class="my-3">{{ $blog->title }}</h5>
                                 <p class="paragraph">Think about it the finest hotels, restaurants, bars, hospitals, airports and special events all have one thing in common
-                                <a href="{{ route('blog.details', $blog->slug) }}">Read More</a>
+                                <a href="{{ route('blog.details', $blog->slug) }}">@lang('home.read_more')</a>
                                 </p>
                             </div>
                         </div>

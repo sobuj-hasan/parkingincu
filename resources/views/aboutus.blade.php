@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <div class="section-title">
-                            <h3>About Us</h3>
+                            <h3>@lang('home.aboutus')</h3>
                         </div>
                     </div>
                 </div>
@@ -16,7 +16,6 @@
         </div>
     </section>
     <!-- BANNER SECTION -->
-
     <!-- LETS CHECK ABOUT US -->
     <section class="parking-space my-5">
         <div class="container py-4">
@@ -25,24 +24,18 @@
                     <img class="img-fluid mt-3 border border-info" src="assets/img/photos/what-we-do.png" alt="img">
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                    <h2 class="section-header"><span>Let Check</span> What we do?</h2>
-                    <p class="paragraph mt-4">
-                        Parking incubator is the premier full turnkey parking facilities solution provider in Saudi Arabia. Specializing in
-                        parking management, operations and maintenance, Parking incubator optimizes traffic flow, enhances parking efficiency,
-                        designs and contracts tailor-made parking facility improvements, provides related supplementary services and more. From
-                        procurement and installation of state of the art equipment to on the ground operations, Parking incubator strives to
-                        provide its parking users integrated convenience while providing the project owners complete - value driven quality
-                        parking solutions.br <br><br>
-                        
-                        Parking incubator actively seek to play a role in the betterment of society, whether through social responsibility,
-                        exploration of applicable environmentally friendly technology or government led initiatives. We pool various talents
-                        into a melting pot comprised of highly experienced seniors, with young vibrant and creative staff who with eager take on
-                        their role as part of the Parking incubator team.<br><br>
-                        
-                        At Parking incubator we focus on strategically important and highly selective projects. Our goal in any project is to
-                        add value; value for the client, value for the project and value for the customers. This is Parking incubator, this is
-                        what we stand for and this is what we value.
-                    </p>
+                    <h2 class="section-header"><span>@lang('home.lets_check')</span> @lang('home.what_we_do')</h2>
+                    <p class="paragraph mt-4">@lang('home.aboutus_text')</p>
+                    <p class="paragraph mt-4">@lang('home.aboutus_text2')</p>
+                    <p class="paragraph mt-4">@lang('home.aboutus_text3')</p>
+                    <p class="paragraph mt-4">@lang('home.aboutus_text4')</p>
+                    <p class="paragraph mt-4">@lang('home.aboutus_text5')</p>
+                    <p class="paragraph mt-4">@lang('home.aboutus_text6')</p>
+                    <p class="paragraph mt-4">@lang('home.aboutus_text7')</p>
+                    <h6 class="mt-4">@lang('home.mission')</h6>
+                    <p class="paragraph mt-4">@lang('home.aboutus_text8')</p>
+                    <h6 class="mt-4">@lang('home.vision')</h6>
+                    <p class="paragraph mt-4">@lang('home.aboutus_text9')</p>
                 </div>
             </div>
         </div>

@@ -6,12 +6,31 @@ body {
     font-weight: 600;
 }
 
+/* ===================
+home page css
+=================== */
+.header-top ul {
+    border-left: 1.5px solid var(--wc);
+}
+.header-top ul:last-child{
+    border-left: none;
+}
+.search-slt {
+    border-left: 1.5px solid var(--gc);
+    padding-right: 10px;
+}
+.search-slt:last-child{
+    border-right: none;
+}
+.quality-item {
+    min-height: 172px;
+}
+
 
 
 .menubar ul{
     text-align: left;
 }
-
 .footer-box ul li{
     padding-left: 0;
     padding-right: 28px;

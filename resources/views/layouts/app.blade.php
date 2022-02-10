@@ -45,11 +45,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-end">
-                    <p class="mt-3">Call Us: +02154879635</p>
+                    <p class="mt-3">@lang('home.callus') +02154879635</p>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-end">
                     <span class="d-flex align-items-center">
-                        <p class="mt-3">Follow us:</p>
+                        <p class="mt-3">@lang('home.followus')</p>
                         <ul class="d-flex">
                             <li class="text-white">
                                 <a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-square fs-5"></i></a>
@@ -70,7 +70,7 @@
                     <span class="d-flex align-items-center">
                         <ul class="">
                             <li>
-                                <a href="{{ route('service') }}#booking-request">Become Neighbor Host</a>
+                                <a href="{{ route('service') }}#booking-request">@lang('home.become_neighbor_host')</a>
                             </li>
                         </ul>
                         <ul class="">
@@ -87,7 +87,7 @@
                         <ul class="">
                             @if (Auth::guest())
                                 <li>
-                                    <a href="{{ route('login') }}">Sign Up</a>
+                                    <a href="{{ route('login') }}">@lang('home.signup')</a>
                                 </li>
                             @else
                                 <li>
@@ -124,23 +124,23 @@
                 <div class="col-md-8 d-none d-md-block">
                     <div class="menubar">
                         <ul>
-                            <li><a href="{{ route('index') }}">Home</a></li>
-                            <li><a href="{{ route('aboutus') }}">About Us</a></li>
+                            <li><a href="{{ route('index') }}">@lang('home.home')</a></li>
+                            <li><a href="{{ route('aboutus') }}">@lang('home.aboutus')</a></li>
                             <li class="pe-0">
                                 <a href="{{ route('service') }}">
-                                    Services
+                                    @lang('home.services')
                                     <img src="{{ asset('assets/img/icon/dropeown.png') }}" alt="dropdown-img">
                                 </a>
                             </i>
                             </li>
                             <li class="pe-0">
                                 <a href="{{ route('valet.parking') }}">
-                                    Valet Parking 
+                                    @lang('home.valet_parking')
                                     <img src="{{ asset('assets/img/icon/dropeown.png') }}" alt="dropdown-img">
                                 </a>
                             </i>
-                            <li><a href="{{ route('index') }}#latest-blog">Blog</a></li>
-                            <li><a href="{{ route('contactus') }}">Contact Us</a></li>
+                            <li><a href="{{ route('index') }}#latest-blog">@lang('home.blog')</a></li>
+                            <li><a href="{{ route('contactus') }}">@lang('home.contactus')</a></li>
                         </ul>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('index') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Home
+                            @lang('home.home')
                         </button>
                     </a>
                 </h2>
@@ -174,7 +174,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('aboutus') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            About Us
+                            @lang('home.aboutus')
                         </button>
                     </a>
                 </h2>
@@ -183,7 +183,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('service') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Services 
+                            @lang('home.services')
                         </button>
                     </a>
                 </h2>
@@ -192,7 +192,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('valet.parking') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Valet Parking 
+                            @lang('home.valet_parking')
                         </button>
                     </a>
                 </h2>
@@ -217,7 +217,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('index') }}#latest-blog">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Our Blog
+                            @lang('home.blog')
                         </button>
                     </a>
                 </h2>
@@ -226,7 +226,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('contactus') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Contact Us
+                            @lang('home.contactus')
                         </button>
                     </a>
                 </h2>
@@ -235,7 +235,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('login') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Sign Up
+                            @lang('home.signup')
                         </button>
                     </a>
                 </h2>
@@ -258,8 +258,8 @@
             <div class="row pt-4">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                     <img src="{{ asset('assets/img/logo/footer-logo.png') }}" alt="footer-logo"><br>
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                    <form method="GET" action="{{ route('subscribe') }}">
+                    <span>@lang('home.footer_paragraph')</span>
+                    {{-- <form method="GET" action="{{ route('subscribe') }}">
                         <div class="input-group mt-3">
                             <input type="text" class="custom-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2" value="{{ old('email') }}" name="email">
                             <button type="submit" id="button-addon2"> Subscribe </button>
@@ -267,7 +267,7 @@
                         @error('email')
                             <span class="text-warning fw-bolder">{{ $message }}</span>
                         @enderror
-                    </form>
+                    </form> --}}
                     <div class="social-link mt-3">
                         <ul class="d-flex">
                             <li class="mx-2">
@@ -290,74 +290,73 @@
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                     <div class="footer-link">
-                        <h6 class="mb-5">Quick Link</h6>
+                        <h6 class="mb-5">@lang('home.Quick_Link')</h6>
                         <ul>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="{{ route('valet.parking') }}">Valet Parking</a>
+                                <a class="ms-2" href="{{ route('valet.parking') }}">@lang('home.valet_parking')</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="{{ route('valet.parking') }}">Parking Management System</a>
+                                <a class="ms-2" href="{{ route('valet.parking') }}">@lang('home.parking_management_system')</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="{{ route('service') }}#booking-request">Become Neighbor Host</a>
+                                <a class="ms-2" href="{{ route('service') }}#booking-request">@lang('home.become_neighbor_host')</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="{{ route('service') }}">Property Management</a>
+                                <a class="ms-2" href="{{ route('service') }}">@lang('home.property_management')</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="{{ route('aboutus') }}">Land Rental Management</a>
+                                <a class="ms-2" href="{{ route('aboutus') }}">@lang('home.land_rental_management')</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                     <div class="footer-link">
-                        <h6 class="mb-5">Important Link</h6>
+                        <h6 class="mb-5">@lang('home.Important_Link')</h6>
                         <ul>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="{{ route('login') }}">Account</a>
+                                <a class="ms-2" href="{{ route('login') }}">@lang('home.account')</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="{{ route('service') }}">Service Page</a>
+                                <a class="ms-2" href="{{ route('service') }}">@lang('home.service_page')</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="{{ route('index') }}#latest-blog">Blog Page</a>
+                                <a class="ms-2" href="{{ route('index') }}#latest-blog">@lang('home.blog_page')</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="{{ route('contactus') }}">Contact Page</a>
+                                <a class="ms-2" href="{{ route('contactus') }}">@lang('home.contact_page')</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="{{ route('aboutus') }}">How it work</a>
+                                <a class="ms-2" href="{{ route('aboutus') }}">@lang('home.how_it_work')</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                     <div class="footer-link">
-                        <h6 class="mb-5">Contact Info</h6>
+                        <h6 class="mb-5">@lang('home.contact_info')</h6>
                         <ul>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="">Riadah Incubators Startup Studio And corporate factory - Khaldiya Towers - 4th Tower - Faisal Bin Turki Road - Office
-                                No. 6 - Floor 13 - Riyadh</a>
+                                <a class="ms-2" href="">@lang('home.address_value')</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="">Email: info@parkingincu.com</a>
+                                <a class="ms-2" href="">@lang('home.email_value')</a>
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="">Phone : +966 55 117 5959</a>
+                                <a class="ms-2" href="">@lang('home.phone_value')</a>
                             </li>
                         </ul>
                     </div>
@@ -372,21 +371,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 my-3">
-                    Copyrights © 2021 | All Rights Reserved at <span>Parking Incubatort</span>
+                    Copyrights © 2022 | All Rights Reserved at <span>Parking Incubatort</span>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <ul class="d-flex justify-content-end">
                         <li class="my-3">
-                            <a href="">Terms & Condition</a>
+                            <a href="">@lang('home.terms_and_condition')</a>
                         </li>
                         <li class="my-3">
-                            <a href="">Business Policy</a>
+                            <a href="">@lang('home.business_policy')</a>
                         </li>
                         <li class="my-3">
-                            <a href="">Contact</a>
+                            <a href="">@lang('home.business_policy')</a>
                         </li>
                         <li class="my-3">
-                            <a href="">Privacy Policy</a>
+                            <a href="">@lang('home.privacy_policy')</a>
                         </li>
                     </ul>
                 </div>

@@ -6,12 +6,12 @@
     background: var(--dgc);
 }
 .header-top p{
-    font-weight: 500;
+    font-weight: 900;
     font-size: 14px;
     line-height: 16px;
 }
 .header-top ul li {
-	font-weight: 500;
+	font-weight: 900;
 	font-size: 14px;
 	line-height: 16px;
 	margin: 0px 14px;
@@ -57,7 +57,7 @@ header {
 }
 
 .menubar ul li a {
-    font-weight: 400;
+    font-weight: 900;
     font-size: 16px;
     text-transform: capitalize;
     display: inline-block;
@@ -111,7 +111,7 @@ header {
     -webkit-transition: .4s;
     transition: .4s;
     color: var(--pc);
-    font-weight: 400;
+    font-weight: 900;
 }
 
 .custom.accordion-button:hover {
@@ -131,7 +131,7 @@ header {
     background: var(--rc);
     -webkit-transform: none;
     transform: none;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 .custom.accordion-button:not(.collapsed)::after {
@@ -180,7 +180,7 @@ header {
     font-size: 15px;
     text-transform: capitalize;
     color: var(--pc);
-    font-weight: 400;
+    font-weight: 900;
     display: inline-block;
     margin-left: 40px;
 }
@@ -269,7 +269,7 @@ header {
 .search-slt{
     display: block;
     width: 100%;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     color: var(--lbc);
     line-height: 18px;
@@ -291,7 +291,7 @@ header {
 .wrn-btn{
     width: 100%;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 900;
     text-transform: capitalize;
     height: calc(3rem + 2px) !important;
     border-radius:0;
@@ -300,7 +300,7 @@ header {
     background: var(--wsc);
     border: none;
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 18px;
     line-height: 21px;
     color: var(--wc);
@@ -308,9 +308,10 @@ header {
 /* BANNER PART CSS */
 
 /* QUALITY ITEM PART */
-.quality-item{
+.quality-item {
     border: 1px dotted var(--dgc);
     padding: 22px;
+    min-height: 198px;
 }
 /* QUALITY ITEM PART */
 
@@ -331,7 +332,7 @@ header {
     border-radius: 50px;
 }
 .more-service span{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     color: var(--pgc);
@@ -342,17 +343,17 @@ header {
 .valet-parking h5{
     text-transform: uppercase;
     color: var(--wsc);
-    font-weight: 700;
+    font-weight: 900;
 }
 .valet-parking .view-btn a {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 20px;
     line-height: 24px;
     padding: 18px 36px;
 }
 
 .valet-service h5{
-    font-weight: 700;
+    font-weight: 900;
     font-size: 16px;
     line-height: 18px;
     color: var(--dgc);
@@ -364,7 +365,7 @@ header {
 
 /* RENT OUT */
 .rent-out .view-btn a{
-    font-weight: 700;
+    font-weight: 900;
     font-size: 20px;
     line-height: 26px;
     padding: 20px 68px;
@@ -374,10 +375,10 @@ header {
 /* LATEST BLOG */
 .latest-blog h5{
     color: var(--wsc);
-    font-weight: 500;
+    font-weight: 700;
 }
 .latest-blog h3{
-    font-weight: 700;
+    font-weight: 900;
 }
 hr.latest-blog{
     background: #CCCCCC;
@@ -390,7 +391,7 @@ hr.latest-blog{
     color: var(--bc);
 }
 .latest-blog a{
-    font-weight: 500;
+    font-weight: 700;
     color: #000639;
     transition: 0.2s;
 }
@@ -407,20 +408,20 @@ hr.latest-blog{
     outline: none;
     border-radius: 4px;
     background: var(--wc);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 26px;
     color: var(--dgc);
     padding-left: 20px;
 }
 .get-notificaiton .custom-control::placeholder{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 26px;
     color: var(--gc);
 }
 .get-notificaiton button{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     border-radius: 4px;
@@ -435,7 +436,7 @@ footer{
     background: var(--fbg);
 }
 footer .custom-control{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     background: var(--wc);
@@ -448,7 +449,7 @@ footer .custom-control{
     padding-left: 10px;
 }
 footer .input-group button{
-    font-weight: 700;
+    font-weight: 900;
     font-size: 14px;
     line-height: 16px;
     background: var(--wsc);
@@ -501,7 +502,7 @@ footer .input-group button{
 }
 .copyright span{
     color: var(--wsc);
-    font-weight: 500;
+    font-weight: 600;
 }
 .copyright ul li a{
     color: var(--gc);
@@ -526,7 +527,7 @@ footer .input-group button{
     background: var(--lnc);
 }
 .search-result h6{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     color: var(--abc);
@@ -546,7 +547,7 @@ footer .input-group button{
     box-shadow: 0px 10px 25px 0px #00000040;
 }
 .search-result .view-btn a {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 16px;
     line-height: 26px;
     padding: 12px 36px;
@@ -557,7 +558,7 @@ footer .input-group button{
     color: var(--wsc);
 }
 .parking-valet h6{
-    font-weight: 700;
+    font-weight: 900;
     font-size: 35px;
     line-height: 40px;
     color: var(--dgc);
@@ -570,7 +571,7 @@ footer .input-group button{
     min-height: 154px;
 }
 .parking-valet p{
-    font-weight: 700;
+    font-weight: 900;
     color: var(--abc);
 }
 
@@ -609,7 +610,7 @@ footer .input-group button{
     background: var(--wc);
     border: none;
     outline: none;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 40px;
     padding-left: 15px;
@@ -624,14 +625,14 @@ footer .input-group button{
     height: 65px;
     border: none;
     outline: none;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 26px;
 }
 .contact-form button{
     width: 100%;
     height: 65px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     color: var(--wc);
@@ -643,7 +644,7 @@ footer .input-group button{
     Booking Page CSS
 ====================================== */
 .contactual-btn a{
-    font-weight: 700;
+    font-weight: 900;
     font-size: 16px;
     line-height: 18px;
     color: var(--wc);
@@ -662,13 +663,13 @@ footer .input-group button{
 }
 .banner-two .price h6{
     color: var(--wc);
-    font-weight: 600;
+    font-weight: 900;
     font-size: 20px;
     line-height: 23px;
 }
 .banner-two .price span{
     color: var(--gc);
-    font-weight: 600;
+    font-weight: 900;
     font-size: 14px;
     line-height: 16px;
     text-transform: lowercase;
@@ -688,7 +689,7 @@ footer .input-group button{
 }
 .parking-description h6{
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 20px;
     line-height: 24px;
     color: var(--abc);
@@ -698,14 +699,14 @@ hr.features{
     background: #CCCCCC;
 }
 .features li h6{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     color: var(--abc);
     width: 40%;
 }
 .features li .small-text{
-    font-weight: 400;
+    font-weight: 900;
     font-size: 16px;
     line-height: 18px;
     color: var(--dgc);
@@ -720,7 +721,7 @@ hr.features{
 }
 
 .book-space ul li p{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 40px;
     color: var(--dgc);
@@ -738,21 +739,21 @@ hr.features{
     color: #CCCCCC;
 }
 .book-space .custom-control option{
-    font-weight: 400;
+    font-weight: 900;
     font-size: 16px;
     line-height: 18px;
     color: var(--dgc);
 }
 
 .book-summary ul li p{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: var(--dgc);
     width: 80%;
 }
 .book-summary ul li .amount{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: var(--dgc);
@@ -767,7 +768,7 @@ hr.features{
 }
 
 .booking-btn button{
-    font-weight: 700;
+    font-weight: 900;
     font-size: 16px;
     line-height: 18px;
     color: var(--wc);
@@ -783,7 +784,7 @@ hr.features{
     color: var(--abc);
 }
 .booking-card .phone h5{
-    font-weight: 700;
+    font-weight: 900;
     color: var(--abc);
 }
 
@@ -798,7 +799,7 @@ hr.features{
     color: var(--wc);
 }
 .contact-us h5{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     color: var(--wc);
@@ -824,7 +825,7 @@ hr.menubefore{
 }
 /* contact form */
 .contact-us .contact-form label{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     color: var(--wc);
 }
@@ -857,7 +858,7 @@ Login Page css
     width: 83%;
     margin-left: 56px;
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 22px;
     color: var(--wc);
 }
@@ -879,18 +880,18 @@ Login Page css
 }
 .login-card .custom-form-control{
     height: 50px;
-    font-weight: 400;
+    font-weight: 900;
     font-size: 18px;
     color: var(--bc);
 }
 .login-card label {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 900;
     line-height: 24px;
     color: var(--wc);
 }
 .login-card .custom-form-control::placeholder{
-    font-weight: 400;
+    font-weight: 900;
     font-size: 18px;
     color: var(--gc);
 }
@@ -919,7 +920,7 @@ Register page css
 }
 .signin-card label {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 900;
     line-height: 24px;
     color: var(--wc);
 }
@@ -930,7 +931,7 @@ Register page css
     width: 88%;
     margin-left: 40px;
     border-radius: 5px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 22px;
     color: var(--wc);
 }
@@ -966,13 +967,13 @@ user Dashboard CSS Here
 }
 .dashboard .user-dashboard .left-side .profile h3 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     color: #74408f;
     line-height: 32px;
 }
 .dashboard .user-dashboard .left-side .profile p {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 900;
     color: #975563;
     line-height: 32px;
 }
@@ -987,14 +988,14 @@ user Dashboard CSS Here
 }
 .dashboard .user-dashboard .left-side .left-menu ul li a {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     color: #74408f;
     line-height: 32px;
     text-decoration: none;
 }
 .dashboard .user-dashboard .left-side .left-menu ul li button {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     color: #74408f;
     line-height: 32px;
     text-decoration: none;
@@ -1003,7 +1004,7 @@ user Dashboard CSS Here
 }
 .dashboard .user-dashboard .left-side .left-menu .active {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 32px;
     text-decoration: none;
     background: #364a7b;
@@ -1033,14 +1034,14 @@ user Dashboard CSS Here
 }
 .dashboard .information h6 {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 900;
     color: #74408f;
     line-height: 29px;
     padding: 15px;
 }
 .dashboard .information .basic-information h4 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     color: #74408f;
     line-height: 0px;
     padding: 15px;
@@ -1052,7 +1053,7 @@ user Dashboard CSS Here
 }
 .dashboard .information .basic-information .title ul li p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     color: #1f2937;
     line-height: 12px;
 }
@@ -1063,13 +1064,13 @@ user Dashboard CSS Here
 }
 .dashboard .information .basic-information .answer ul li p {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 900;
     color: #374151;
     line-height: 12px;
 }
 .dashboard .information .personal-information h4 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     color: #74408f;
     line-height: 0px;
     margin-top: 20px;
@@ -1077,12 +1078,12 @@ user Dashboard CSS Here
 }
 .dashboard .information .personal-information h3 {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 700;
     color: #74408f;
 }
 .dashboard .information .personal-information h5 {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .dashboard .information .personal-information .title ul li {
     padding-top: 13px;
@@ -1091,7 +1092,7 @@ user Dashboard CSS Here
 }
 .dashboard .information .personal-information .title ul li p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     color: #1f2937;
     line-height: 12px;
 }
@@ -1102,7 +1103,7 @@ user Dashboard CSS Here
 }
 .dashboard .information .personal-information .answer ul li p {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 900;
     color: #374151;
     line-height: 12px;
 }
