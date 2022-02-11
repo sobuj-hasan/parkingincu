@@ -36,7 +36,7 @@
                                 @lang('home.service_one_listthree')
                             </li>
                             <div class="view-btn my-3">
-                                <a class="" href="">View All</a>
+                                <a class="" href="">@lang('home.view_all')</a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                                 @lang('home.service_two_listfour')
                             </li>
                             <div class="view-btn my-3">
-                                <a class="" href="">View All</a>
+                                <a class="" href="">@lang('home.view_all')</a>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                                 @lang('home.service_three_listfour')
                             </li>
                             <div class="view-btn my-3">
-                                <a class="" href="">View All</a>
+                                <a class="" href="">@lang('home.view_all')</a>
                             </div>
                         </div>
                     </div>
@@ -93,19 +93,19 @@
                         <div class="card-body">
                             <h5 class="mt-2 mb-3">@lang('home.Supplementary_Service')</h5>
                             <li class="small-text pt-3 my-3">
-                                Taxi, Limousine & Busing
+                                @lang('home.service_four_listone')
                             </li>
                             <li class="small-text my-3">
-                                Golf Cart Transportation
+                                @lang('home.service_four_listtwo')
                             </li>
                             <li class="small-text my-3">
-                                Parking Advertisement
+                                @lang('home.service_four_listthree')
                             </li>
                             <li class="small-text pb-3 my-3">
-                                Rental & Car Sharing
+                                @lang('home.service_four_listfour')
                             </li>
                             <div class="view-btn my-3">
-                                <a class="" href="">View All</a>
+                                <a class="" href="">@lang('home.view_all')</a>
                             </div>
                         </div>
                     </div>
@@ -116,19 +116,16 @@
                         <div class="card-body">
                             <h5 class="mt-2 mb-3">@lang('home.Maintenance_Service')</h5>
                             <li class="small-text pt-3 my-3">
-                                Outdoor Parking
+                                @lang('home.service_five_listone')
                             </li>
                             <li class="small-text my-3">
-                                Multistroy Parking
+                                @lang('home.service_five_listtwo')
                             </li>
                             <li class="small-text my-3">
-                                On-street Parking
-                            </li>
-                            <li class="small-text pb-3 my-3">
-                                Basement Parking
+                                @lang('home.service_five_listthree')
                             </li>
                             <div class="view-btn my-3">
-                                <a class="" href="">View All</a>
+                                <a class="" href="">@lang('home.view_all')</a>
                             </div>
                         </div>
                     </div>
@@ -139,19 +136,16 @@
                         <div class="card-body">
                             <h5 class="mt-2 mb-3">@lang('home.Parking_Service_Area')</h5>
                             <li class="small-text pt-3 my-3">
-                                Cashier Booth & Pos Operator
+                                @lang('home.service_six_listtone')
                             </li>
                             <li class="small-text my-3">
-                                Pay on Foot & Ticketing Assistant
+                                @lang('home.service_six_listttwo')
                             </li>
                             <li class="small-text my-3">
-                                Transportation Dispatching
-                            </li>
-                            <li class="small-text pb-3 my-3">
-                                Control Operation
+                                @lang('home.service_six_listtthree')
                             </li>
                             <div class="view-btn my-3">
-                                <a class="" href="">View All</a>
+                                <a class="" href="">@lang('home.view_all')</a>
                             </div>
                         </div>
                     </div>
@@ -166,36 +160,36 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-12">
-                    <h5 class="mb-3 text-center">Add Your Space to Our Platform</h5>
-                    <h6 class="text-center">Send Host Request</h6>
+                    <h5 class="mb-3 text-center">@lang('home.add_your_space_to_our_platform')</h5>
+                    <h6 class="text-center">@lang('home.send_host_request')</h6>
                     <form method="POST" action="{{ route('neighbor.host') }}">
                         @csrf
                         <div class="contact-form py-5">
                             <div class="row">
                                 <div class="col-md-4 my-3">
-                                    <input type="text" class="custom-control" placeholder="Full Name" value="{{ old('name') }}" name="name">
+                                    <input type="text" class="custom-control" placeholder="@lang('home.full_name')" value="{{ old('name') }}" name="name">
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <input type="text" class="custom-control" placeholder="Contact Number" value="{{ old('phone') }}" name="phone">
+                                    <input type="text" class="custom-control" placeholder="@lang('home.contact_number')" value="{{ old('phone') }}" name="phone">
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <input type="email" class="custom-control" placeholder="Email Address" value="{{ old('email') }}" name="email">
+                                    <input type="email" class="custom-control" placeholder="@lang('home.email_address')" value="{{ old('email') }}" name="email">
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <input type="text" class="custom-control" placeholder="Parking Space Country" value="{{ old('country') }}" name="country">
+                                    <input type="text" class="custom-control" placeholder="@lang('home.parking_space_country')" value="{{ old('country') }}" name="country">
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <input type="text" class="custom-control" placeholder="Parking Space City" value="{{ old('city') }}" name="city">
+                                    <input type="text" class="custom-control" placeholder="@lang('home.parking_space_city')" value="{{ old('city') }}" name="city">
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <input type="text" class="custom-control" placeholder="Parking Space Address" value="{{ old('address') }}" name="address">
+                                    <input type="text" class="custom-control" placeholder="@lang('home.parking_space_address')" value="{{ old('address') }}" name="address">
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <input type="text" class="custom-control" placeholder="Parking Rate (Per day)" value="{{ old('parking_rate') }}" name="parking_rate">
+                                    <input type="text" class="custom-control" placeholder="@lang('home.parking_rate_per_day')" value="{{ old('parking_rate') }}" name="parking_rate">
                                 </div>
                                 <div class="col-md-4 my-3">
                                     <select class="form-select" name="money_type">
-                                        <option value="" selected>--- Select Money Type ---</option>
+                                        <option value="" selected>@lang('home.select_money_type')</option>
                                         <option value="Contactual">Contactual</option>
                                         <option value="NonContactual">NonContactual</option>
                                         <option value="Others">Others</option>
@@ -203,17 +197,17 @@
                                 </div>
                                 <div class="col-md-4 my-3">
                                     <select class="form-select" name="parking_type">
-                                        <option value="" selected>--- Select Parking Type ---</option>
+                                        <option value="" selected>@lang('home.select_parking_type')</option>
                                         <option value="Residencial">Residencial</option>
                                         <option value="Normal">Normal</option>
                                         <option value="Others">Others</option>
                                     </select>
                                 </div>
                                 <div class="col-md-12 my-3">
-                                    <textarea style="height: 230px;" class="custom-control" name="message" cols="30" placeholder="Write Parking Host Message" rows="10">{{ old('message') }}</textarea>
+                                    <textarea style="height: 230px;" class="custom-control" name="message" cols="30" placeholder="@lang('home.write_parking_host_message')" rows="10">{{ old('message') }}</textarea>
                                 </div>
                                 <div class="col-md-4 mt-3">
-                                    <button type="submit"> Send Neighbor Host Request </button>
+                                    <button type="submit">@lang('home.Send_Neighbor_Host_Request')</button>
                                 </div>
                             </div>
                         </div>

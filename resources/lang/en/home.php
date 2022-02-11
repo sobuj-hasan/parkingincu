@@ -59,15 +59,12 @@ return [
     "service_four_listtwo" => "Golf Cart Transportation",
     "service_four_listthree" => "Parking Advertisement",
     "service_four_listfour" => "Rental & Car Sharing",
-
     "service_five_listone" => "Regular maintenance of cars",
     "service_five_listtwo" => "Parking lot maintenance",
     "service_five_listthree" => "Car wash and simple maintenance services",
     "service_six_listtone" => "Park cars at mass transit stations",
     "service_six_listttwo" => "Parking cars at railway stations",
     "service_six_listtthree" => "Parking at airports",
-
-
     "valet_parking" => "Valet Parking",
     "Service_at_your_doorstep" => "Service at your door step",
     "service_at_your_door_text" => "If you have a car dealership and you need to provide valet parking to your customers",
@@ -132,9 +129,67 @@ return [
     // ==========================
     // Services page content 
     // ==========================
-    "" => "",
-    "" => "",
-    "" => "",
+    "add_your_space_to_our_platform" => "Add Your Space to Our Platform",
+    "send_host_request" => "SEND HOST REQUEST",
+    "full_name" => "Full Name",
+    "contact_number" => "Contact Number",
+    "email_address" => "Email Address",
+    "parking_space_country" => "Parking Space Country",
+    "parking_space_city" => "Parking Space City",
+    "parking_space_address" => "Parking Space Address",
+    "parking_rate_per_day" => "Parking Rate (Per day)",
+    "select_money_type" => "--- Select Money Type ---",
+    "select_parking_type" => "--- Select Parking Type ---",
+    "write_parking_host_message" => "Write Parking Host Message",
+    "Send_Neighbor_Host_Request" => "Send Neighbor Host Request",
+    // =================================
+    // Valet parking contect 
+    // =================================
+    "Valet_Parking" => "Valet Parking",
+    "valet_parking1" => "Providing hourly street parking services",
+    "valet_parking2" => "Providing parking management and rehabilitation services",
+    "valet_parking3" => "Providing valet parking services at airports",
+    "valet_parking4" => "Providing valet parking at railway stations",
+    "valet_parking5" => "Providing valet parking at mass transit stations",
+    "valet_parking6" => "Providing parking monitoring services with security cameras",
+    "valet_parking7" => "Providing solar powered parking lighting services",
+    "valet_parking8" => "Providing parking services for luxury hotels and apartments",
+    "valet_parking9" => "Providing parking services for residential complexes (compounds)",
+    "valet_parking10" => "Providing parking services for shopping centers and malls",
+    "valet_parking11" => "Providing parking services for exhibitions, conferences and events",
+    "valet_parking12" => "Providing parking services for restaurants and cafes",
+    "valet_parking13" => "Providing parking services at museums and cinemas",
+    "valet_parking14" => "Providing parking services at public parks and parks",
+    "valet_parking15" => "Providing maintenance, operation & parking management services at Governmental entities",
+    "valet_parking16" => "Providing valet parking for entertainment authority events",
+    "valet_parking17" => "Providing valet parking for Sports Authority events",
+    "valet_parking18" => "Providing valet parking for Culture Authority events",
+    "valet_parking19" => "Providing parking services for private and government hospitals",
+    "valet_parking20" => "Providing parking management service for vegetable markets (loading and unloading)",
+    "valet_parking21" => "Providing control service for violating parking lots In partnership with Traffic",
+    "valet_parking22" => "Providing crowd management services and frequency transmission between events and parking",
+    "valet_parking23" => "Providing luxury car rental services with chauffeur",
+    "valet_parking24" => "Providing third party property management services including parking and land rental-",
+    "valet_parking25" => "Providing land rental and investment services",
+    "valet_parking26" => "Providing car wash and simple maintenance services",
+    // ============================
+    // Contact Us page content 
+    // ============================
+    "address" => "Address",
+    "social_media" => "Social Media",
+    "type_your_name" => "Type Your Name",
+    "your_email" => "Your Email",
+    "land_number" => "+996 *** *****",
+    "What_do_you_want_to_inquire" => "What do you want to inquire? ",
+    "type_text" => "Type Text",
+    "service_name" => "Service Name ",
+    "Type_Services" => "Type Services",
+    "address" => "Address ",
+    "your_address" => "Your Address",
+    "message" => "Message ",
+    "Type_your_message" => "Type your message",
+    "Submit_Message" => "Submit Message",
+    "google_map" => "Google Map",
 
 
 
