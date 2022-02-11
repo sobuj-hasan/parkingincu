@@ -36,6 +36,12 @@ return [
     "technical_operation" => "Technical Operation",
     "invest_development" => "Invest & Development",
     "Supplementary_Service" => "Supplementary Service",
+
+
+    "Maintenance_Service" => "Maintenance Service",
+    "Parking_Service_Area" => "Parking Service Area",
+
+
     "view_all" => "View all",
     "see_more" => "See more",
     "service_one_listone" => "Management and rehabilitation of parking",
@@ -53,6 +59,15 @@ return [
     "service_four_listtwo" => "Golf Cart Transportation",
     "service_four_listthree" => "Parking Advertisement",
     "service_four_listfour" => "Rental & Car Sharing",
+
+    "service_five_listone" => "Regular maintenance of cars",
+    "service_five_listtwo" => "Parking lot maintenance",
+    "service_five_listthree" => "Car wash and simple maintenance services",
+    "service_six_listtone" => "Park cars at mass transit stations",
+    "service_six_listttwo" => "Parking cars at railway stations",
+    "service_six_listtthree" => "Parking at airports",
+
+
     "valet_parking" => "Valet Parking",
     "Service_at_your_doorstep" => "Service at your door step",
     "service_at_your_door_text" => "If you have a car dealership and you need to provide valet parking to your customers",
@@ -114,7 +129,9 @@ return [
     "vision" => "Vission",
     "aboutus_text8" => "Parking Incubator strives to provide integrated convenience to parking users while providing high quality, full-value parking solutions to project owners.",
     "aboutus_text9" => "Play a role in improving society, whether through social responsibility, exploration of applicable environmentally friendly technology, or government-led initiatives",
-    "" => "",
+    // ==========================
+    // Services page content 
+    // ==========================
     "" => "",
     "" => "",
     "" => "",

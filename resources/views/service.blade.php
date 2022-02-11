@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <div class="section-title">
-                            <h3>Our Services</h3>
+                            <h3>@lang('home.our_services')</h3>
                         </div>
                     </div>
                 </div>
@@ -25,18 +25,15 @@
                     <div class="card p-card">
                         <img src="{{ asset('assets/img/photos/Management.png') }}" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Management </h5>
+                            <h5 class="mt-2 mb-3">@lang('home.management') </h5>
                             <li class="small-text pt-3 my-3">
-                                Event Crowd Management
+                                @lang('home.service_one_listone')
                             </li>
                             <li class="small-text my-3">
-                                Land & Property Management
+                                @lang('home.service_one_listtwo')
                             </li>
                             <li class="small-text my-3">
-                                Parking Facility Management
-                            </li>
-                            <li class="small-text pb-3 my-3">
-                                Rate Management
+                                @lang('home.service_one_listthree')
                             </li>
                             <div class="view-btn my-3">
                                 <a class="" href="">View All</a>
@@ -48,18 +45,18 @@
                     <div class="card p-card">
                         <img src="{{ asset('assets/img/photos/Technical-Operation.png') }}" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Technical Operation</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.technical_operation')</h5>
                             <li class="small-text pt-3 my-3">
-                                Cashier Booth & Pos Operator
+                                @lang('home.service_two_listone')
                             </li>
                             <li class="small-text my-3">
-                                Pay on Foot & Ticketing Assistant
+                                @lang('home.service_two_listtwo')
                             </li>
                             <li class="small-text my-3">
-                                Transportation Dispatching
+                                @lang('home.service_two_listthree')
                             </li>
                             <li class="small-text pb-3 my-3">
-                                Control Operation
+                                @lang('home.service_two_listfour')
                             </li>
                             <div class="view-btn my-3">
                                 <a class="" href="">View All</a>
@@ -71,18 +68,18 @@
                     <div class="card p-card">
                         <img src="{{ asset('assets/img/photos/Invest-&-Development.png') }}" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Invest & Development </h5>
+                            <h5 class="mt-2 mb-3">@lang('home.invest_development')</h5>
                             <li class="small-text pt-3 my-3">
-                                Systems & Equipment Investments
+                                @lang('home.service_three_listone')
                             </li>
                             <li class="small-text my-3">
-                                Master Plan & Design
+                                @lang('home.service_three_listtwo')
                             </li>
                             <li class="small-text my-3">
-                                Equipment & Systems Procurement
+                                @lang('home.service_three_listthree')
                             </li>
                             <li class="small-text pb-3 my-3">
-                                Civil Works & Installation
+                                @lang('home.service_three_listfour')
                             </li>
                             <div class="view-btn my-3">
                                 <a class="" href="">View All</a>
@@ -94,7 +91,7 @@
                     <div class="card p-card">
                         <img src="{{ asset('assets/img/photos/Supplementary-Service.png') }}" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Supplementary Service</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.Supplementary_Service')</h5>
                             <li class="small-text pt-3 my-3">
                                 Taxi, Limousine & Busing
                             </li>
@@ -117,7 +114,7 @@
                     <div class="card p-card">
                         <img src="{{ asset('assets/img/photos/Maintanence-Service.png') }}" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Maintanence Service</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.Maintenance_Service')</h5>
                             <li class="small-text pt-3 my-3">
                                 Outdoor Parking
                             </li>
@@ -140,7 +137,7 @@
                     <div class="card p-card">
                         <img src="{{ asset('assets/img/photos/Parking-Service-Area.png') }}" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">Parking Service Area</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.Parking_Service_Area')</h5>
                             <li class="small-text pt-3 my-3">
                                 Cashier Booth & Pos Operator
                             </li>
