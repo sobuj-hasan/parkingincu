@@ -173,7 +173,7 @@
                                     <input type="text" class="custom-control" placeholder="@lang('home.contact_number')" value="{{ old('phone') }}" name="phone">
                                 </div>
                                 <div class="col-md-4 my-3">
-                                    <input type="email" class="custom-control" placeholder="@lang('home.email_address')" value="{{ old('email') }}" name="email">
+                                    <input type="text" class="custom-control" placeholder="@lang('home.email_address')" value="{{ old('email') }}" name="email">
                                 </div>
                                 <div class="col-md-4 my-3">
                                     <input type="text" class="custom-control" placeholder="@lang('home.parking_space_country')" value="{{ old('country') }}" name="country">

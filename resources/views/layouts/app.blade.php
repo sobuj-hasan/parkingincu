@@ -45,7 +45,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-end">
-                    <p class="mt-3">@lang('home.callus') +02154879635</p>
+                    <p class="mt-3">@lang('home.callus') @lang('home.callus_value')</p>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-end">
                     <span class="d-flex align-items-center">
@@ -129,14 +129,14 @@
                             <li class="pe-0">
                                 <a href="{{ route('service') }}">
                                     @lang('home.services')
-                                    <img src="{{ asset('assets/img/icon/dropeown.png') }}" alt="dropdown-img">
+                                    {{-- <img src="{{ asset('assets/img/icon/dropeown.png') }}" alt="dropdown-img"> --}}
                                 </a>
                             </i>
                             </li>
                             <li class="pe-0">
                                 <a href="{{ route('valet.parking') }}">
                                     @lang('home.valet_parking')
-                                    <img src="{{ asset('assets/img/icon/dropeown.png') }}" alt="dropdown-img">
+                                    {{-- <img src="{{ asset('assets/img/icon/dropeown.png') }}" alt="dropdown-img"> --}}
                                 </a>
                             </i>
                             <li><a href="{{ route('index') }}#latest-blog">@lang('home.blog')</a></li>

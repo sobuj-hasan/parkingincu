@@ -39,3 +39,7 @@ home page css
     left: inherit;
     right: 0;
 }
+
+.footer-link h6::after {
+    right: 0px;
+}
