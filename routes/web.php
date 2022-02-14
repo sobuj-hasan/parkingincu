@@ -21,6 +21,7 @@ Route::get('/dashboard', function () {
     Route::get('contact/message', [FrontendController::class, 'contactmessage'])->name('contact.message');
     Route::get('blog/details/{slug}', [FrontendController::class, 'blogdetails'])->name('blog.details');
     Route::post('neighbor/host', [FrontendController::class, 'neighborhost'])->name('neighbor.host');
+    Route::get('placeinfos/{slug}', [FrontendController::class, 'placeinfos']);
 
     Route::resources([
         'space/booking' => 'OrderController',

@@ -2,7 +2,8 @@
 @section('title', 'Space booking')
 @section('content')
     <!-- BANNER SECTION -->
-    <section class="banner-two parking-description" style="background-image: url({{ asset('assets/img/photos/booking-page-banner.png') }}); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <section class="banner-two parking-description"
+        style="background-image: url({{ asset('assets/img/photos/booking-page-banner.png') }}); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="overlay py-5">
             <div class="container py-5">
                 <div class="row">
@@ -11,7 +12,8 @@
                             <img src="{{ asset('assets/img/icon/waltop-space.png') }}" alt="icon-img">
                             <h5 class="ms-3">{{ $single_space->name }}</h5>
                         </div>
-                        <p class="small-text ms-5"><span><i class="fas fa-map-marker-alt"></i></span> {{ $single_space->address }}, {{ $single_space->city }}, {{ $single_space->country }}</p>
+                        <p class="small-text ms-5"><span><i class="fas fa-map-marker-alt"></i></span>
+                            {{ $single_space->address }}, {{ $single_space->city }}, {{ $single_space->country }}</p>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
                         <div class="price">
@@ -34,10 +36,12 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <h5>Description</h5>
                     <p class="paragraph mb-5">
-                        Residential carpark parking space with Fob and permit access. To be provied directly by the owner and upon a successfull booking.
+                        Residential carpark parking space with Fob and permit access. To be provied directly by the owner
+                        and upon a successfull booking.
                     </p>
                     <div class="description-img">
-                        <img class="img-fluid" src="{{ asset('assets/img/photos/description.png') }}" alt="description-img">
+                        <img class="img-fluid" src="{{ asset('assets/img/photos/description.png') }}"
+                            alt="description-img">
                     </div>
                     <div class="small-img">
                         <img class="img-fluid mt-4" src="{{ asset('assets/img/photos/image-1.png') }}" alt="img">
@@ -73,7 +77,8 @@
                     <h5 class="mt-5">Geo Location</h5>
                     <hr class="features">
                     <iframe style="border: 1px solid #555555;" class="w-100 mt-4" height="300px"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463733.90636450704!2d46.53739853647118!3d24.763892723749958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sbd!4v1641461424262!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463733.90636450704!2d46.53739853647118!3d24.763892723749958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sbd!4v1641461424262!5m2!1sen!2sbd"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
                 <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-12 col-sm-12">
@@ -85,9 +90,9 @@
                                 <hr class="features">
                                 <div class="book-space">
                                     <ul>
-                                        <li class="my-2 mt-5 d-flex">
+                                        {{--  <li class="my-2 mt-5 d-flex">
                                             <p>Duration of Contruct</p>
-                                            <select class="custom-control" name="uses_duration" id="">
+                                            <select class="custom-control" name="uses_duration" id="duration" onchange="calculatePrice('{{ request('slug') }}')">
                                                 <option value="">Select Duration</option>
                                                 <option value="01 Day">01 Day</option>
                                                 <option value="02 Day">02 Day</option>
@@ -111,18 +116,30 @@
                                                 <option value="04 Year">04 Year</option>
                                                 <option value="05 Year">05 Year</option>
                                             </select>
+                                        </li>  --}}
+                                        <li class="my-2 d-flex">
+                                            <p>Start Date</p>
+                                            <input class="custom-control" id="start_date" type="date" placeholder="01 Jan 2022"
+                                                name="start_date">
                                         </li>
                                         <li class="my-2 d-flex">
-                                            <p>Use of Time </p>
-                                            <input class="custom-control" type="time" placeholder="10 AM to 05 PM" name="uses_time">
+                                            <p>End Date</p>
+                                            <input class="custom-control" id="end_date" type="date" placeholder="02 Jan 2022"
+                                                name="end_date">
+                                        </li>
+                                        <li class="my-2 d-flex">
+                                            <p>Start Time </p>
+                                            <input class="custom-control" id="start_time" type="time" placeholder="10 AM to 05 PM"
+                                                name="start_time">
+                                        </li>
+                                        <li class="my-2 d-flex">
+                                            <p>End Time </p>
+                                            <input class="custom-control" id="end_time" type="time" placeholder="10 AM to 05 PM"
+                                                name="end_time">
                                         </li>
                                         <li class="my-2 d-flex">
                                             <p>Total Cost of Space</p>
-                                            <input class="custom-control" type="text" placeholder="$100" name="total_cost">
-                                        </li>
-                                        <li class="my-2 d-flex">
-                                            <p>Started From</p>
-                                            <input class="custom-control" type="date" placeholder="01 Jan 2022" name="started_date">
+                                            <input class="custom-control total_cost" type="text" placeholder="$100" name="total_cost">
                                         </li>
                                     </ul>
                                 </div>
@@ -132,7 +149,7 @@
                                         <li class="d-flex">
                                             <i class="fas fa-square me-2 mt-1"></i>
                                             <p>Total Payable cost</p>
-                                            <p class="amount">$100.00</p>
+                                            <p class="amount">$<span class="total_cost">0.00</span></p>
                                         </li>
                                         <li class="d-flex">
                                             <i class="fas fa-square me-2 mt-1"></i>
@@ -140,12 +157,14 @@
                                             <p class="amount">$80.00</p>
                                         </li>
                                         <li class="d-flex">
-                                            <input class="custom-check-input mt-1" type="checkbox" value="" id="flexCheckDefault" name="terms_condition">
+                                            <input class="custom-check-input mt-1" type="checkbox" value=""
+                                                id="flexCheckDefault" name="terms_condition">
                                             <p class="form-ckeck ms-3">Agree with Terms & Condition</p>
                                         </li>
                                     </ul>
+
                                     <div class="booking-btn mt-5 mb-3">
-                                        <button type="submit">Book Confirm</button>
+                                        <button type="button">Book Confirm</button>
                                     </div>
                                 </div>
                             </div>
@@ -178,13 +197,39 @@
 @endsection
 
 
+@push('js')
+    <script>
+        $('input').on('change', function(){
+            calculatePrice('{{ request('slug') }}')
+        });
 
+        function calculatePrice(slug) {
+            var start_date = $('#start_date').val();
+            var end_date = $('#end_date').val();
+            let url = `{{ url('placeinfos') }}/`+slug;
 
+            if (start_date && end_date) {
+                if (start_date > end_date) {
+                    toastr.error('The end date should be bigger than the start date.');
+                    return 0;
+                }
 
-
-
-
-
-
-
-
+                $.ajax({
+                    url: url,
+                    method: 'GET',
+                    data: {
+                        start_date: start_date,
+                        end_date: end_date,
+                    },
+                    success: function(res) {
+                        $('.total_cost').val(res);
+                        $('.total_cost').text(res);
+                    },
+                    error: function(error) {
+                        console.log(error)
+                    }
+                })
+            }
+        }
+    </script>
+@endpush
