@@ -114,7 +114,7 @@
                                         </li>
                                         <li class="my-2 d-flex">
                                             <p>Use of Time </p>
-                                            <input class="custom-control" type="text" placeholder="10 AM to 05 PM" name="uses_time">
+                                            <input class="custom-control" type="time" placeholder="10 AM to 05 PM" name="uses_time">
                                         </li>
                                         <li class="my-2 d-flex">
                                             <p>Total Cost of Space</p>
@@ -122,7 +122,7 @@
                                         </li>
                                         <li class="my-2 d-flex">
                                             <p>Started From</p>
-                                            <input class="custom-control" type="text" placeholder="01 Jan 2022" name="started_date">
+                                            <input class="custom-control" type="date" placeholder="01 Jan 2022" name="started_date">
                                         </li>
                                     </ul>
                                 </div>
@@ -131,7 +131,7 @@
                                     <ul>
                                         <li class="d-flex">
                                             <i class="fas fa-square me-2 mt-1"></i>
-                                            <p>Total cost per Month</p>
+                                            <p>Total Payable cost</p>
                                             <p class="amount">$100.00</p>
                                         </li>
                                         <li class="d-flex">
