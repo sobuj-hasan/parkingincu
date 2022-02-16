@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Models\ContactFormSubmit;
 use App\Models\Neighborhost;
 use App\Models\Parkingspace;
+use Carbon\Carbon;
 use Idemonbd\Notify\Facades\Notify;
 use Illuminate\Support\Facades\Auth;
 
@@ -18,7 +19,7 @@ class FrontendController extends Controller
         $data['blogs'] = Blog::inRandomOrder()->limit(3)->get();
         return view('index', $data);
     }
-    
+
     public function contactus(){
         return view('contactus');
     }
@@ -104,7 +105,7 @@ class FrontendController extends Controller
         Notify::success('Message Successfully Submited', 'Success');
         return back();
     }
-    
+
     public function neighborhost(Request $request){
         $request->validate([
             'name' => 'required',
@@ -130,7 +131,20 @@ class FrontendController extends Controller
         Notify::success('Your Parking Host request Submitted, We will contact You', 'Success');
         return back();
     }
-    
+
+    public function placeinfos(Request $request, $slug)
+    {
+        $space = Parkingspace::where('slug', $slug)->first();
+        if ($request->start_date) {
+            $start_date = Carbon::parse($request->start_date);
+            $end_date = Carbon::parse($request->end_date);
+
+            $diff = $start_date->diffInDays($end_date);
+            $price = $space->price_day * $diff;
+            return response($price);
+        }
+    }
+
 }
 
 
