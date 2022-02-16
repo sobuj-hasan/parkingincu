@@ -107,7 +107,8 @@ return [
     "contact_info" => "Contact Info",
     "address_value" => "Khaldiya Towers - 4th Tower - Faisal Bin Turki Road - Office No. 6 - Floor 13 – Riyadh- Saudi Arabia",
     "email_value" => "Email: info@parkingincu.com",
-    "phone_value" => "Phone : +966 55 117 5959",
+    "phone_value" => "+966 55 117 5959",
+    "phone" => "Phone",
     "terms_and_condition" => "Terms & Condition",
     "business_policy" => "Business Policy",
     "privacy_policy" => "Privacy Policy",
@@ -191,6 +192,21 @@ return [
     "Type_your_message" => "Type your message",
     "Submit_Message" => "Submit Message",
     "google_map" => "Google Map",
+    // =================================
+    // Sign In & sign up page content 
+    // =================================
+    "signin" => "Sign In",
+    "to_your_parking_incubator_account" => "to your Parking Incubator Account",
+    "password" => "Password",
+    "forget_password" => "Forget Password?",
+    "login" => "Log In",
+    "Dont_Have_any_Account" => "Don't Have any Account?",
+    "signup" => "Sign Up",
+    "signin_using" => "Sign In using",
+    "retype_password" => "Re-type Password",
+    "already_have_an_account" => "Already Have an Account !",
+
+
 
 
 

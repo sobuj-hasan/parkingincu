@@ -841,6 +841,10 @@ Login Page css
 .login-part{
     background: #FFFFFF;
 }
+.login-part .card{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .login-card{
     background: var(--abc);
     border: none;
@@ -904,6 +908,10 @@ Register page css
 /* SIGN UP PART */
 .signin-part{
     background: #FFFFFF;
+}
+.signin-part .card{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .signin-card{
     background: var(--abc);

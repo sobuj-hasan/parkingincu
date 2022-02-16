@@ -356,7 +356,7 @@
                             </li>
                             <li class="my-4">
                                 <i class="fas fa-circle"></i>
-                                <a class="ms-2" href="">@lang('home.phone_value')</a>
+                                <a class="ms-2" href="">@lang('home.phone') : @lang('home.phone_value')</a>
                             </li>
                         </ul>
                     </div>

@@ -104,7 +104,8 @@ return [
     "contact_info" => "معلومات الاتصال",
     "address_value" => "أبراج الخالدية - البرج الرابع - طريق فيصل بن تركي - مكتب رقم 6 - الدور 13 - الرياض - المملكة العربية السعودية",
     "email_value" => "  البريد الإلكتروني :  info@parkingincu.com",
-    "phone_value" => "الهاتف  :   +966 55 117 5959",
+    "phone_value" => "5959 117 55 966+",
+    "phone" => "الهاتف",
     "terms_and_condition" => "الشروط والأحكام",
     "business_policy" => "سياسة العمل",
     "privacy_policy" => "سياسة الخصوصية",
@@ -187,6 +188,18 @@ return [
     "Type_your_message" => "اكتب رسالتك",
     "Submit_Message" => "تقديم رسالة",
     "google_map" => "خرائط جوجل",
-
+    // ================================
+    // Login register page content 
+    // ================================
+    "signin" => "سجل دخولك",
+    "to_your_parking_incubator_account" => "إلى حساب حاضنة المواقف الخاص بك",
+    "password" => "كلمة المرور",
+    "forget_password" => "نسيت كلمة المرور؟",
+    "login" => "تسجيل الدخول",
+    "Dont_Have_any_Account" => "ليس لديك حساب؟",
+    "signup" => " اشتراك",
+    "signin_using" => "تسجيل الدخول باستخدام",
+    "retype_password" => "اعد ادخال كلمة المرور",
+    "already_have_an_account" => "هل لديك حساب",
 
 ];

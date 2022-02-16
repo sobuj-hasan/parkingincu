@@ -18,22 +18,22 @@
         line-height: 22px;
     }
     h6 {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 20px;
     }
     .section-header {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 32px;
         line-height: 38px;
         margin-top: 20px;
     }
     .header-top p {
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
     }
     .header-top ul li {
-        font-weight: 400;
+        font-weight: 600;
     }
     .banner-content {
         padding: 80px 0px;
@@ -47,7 +47,7 @@
         border-right: none;
     }
     .search-bar button {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 13px;
         line-height: 20px;
     }
@@ -68,13 +68,13 @@
         display: none;
     }
     .valet-parking .view-btn a {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 20px;
         padding: 15px 50px;
     }
     .rent-out .view-btn a {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         padding: 15px 50px;
@@ -126,22 +126,22 @@
         line-height: 22px;
     }
     h6 {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 20px;
     }
     .section-header {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 28px;
         line-height: 35px;
         margin-top: 20px;
     }
     .header-top p {
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
     }
     .header-top ul li {
-        font-weight: 400;
+        font-weight: 600;
     }
     .banner-content {
         padding: 50px 0px;
@@ -152,7 +152,7 @@
         border-right: none;
     }
     .search-bar button {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 20px;
     }
@@ -173,13 +173,13 @@
         display: none;
     }
     .valet-parking .view-btn a {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 20px;
         padding: 15px 50px;
     }
     .rent-out .view-btn a {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         padding: 15px 50px;
@@ -225,22 +225,22 @@
         line-height: 22px;
     }
     h6 {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 20px;
     }
     .section-header {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 28px;
         line-height: 35px;
         margin-top: 20px;
     }
     .header-top p {
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
     }
     .header-top ul li {
-        font-weight: 400;
+        font-weight: 600;
     }
     .banner-content {
         padding: 50px 0px;
@@ -251,7 +251,7 @@
         border-right: none;
     }
     .search-bar button {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 20px;
     }
@@ -272,13 +272,13 @@
         display: none;
     }
     .valet-parking .view-btn a {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 20px;
         padding: 15px 50px;
     }
     .rent-out .view-btn a {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         padding: 15px 50px;
@@ -321,22 +321,22 @@
         line-height: 22px;
     }
     h6 {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 20px;
     }
     .section-header {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 28px;
         line-height: 35px;
         margin-top: 20px;
     }
     .header-top p {
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
     }
     .header-top ul li {
-        font-weight: 400;
+        font-weight: 600;
         margin: 5px 10px;
     }
     .banner-content {
@@ -348,7 +348,7 @@
         border-right: none;
     }
     .search-bar button {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 20px;
     }
@@ -369,13 +369,13 @@
         display: none;
     }
     .valet-parking .view-btn a {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 20px;
         padding: 15px 50px;
     }
     .rent-out .view-btn a {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         padding: 15px 50px;
@@ -397,7 +397,10 @@
         margin-left: 18px;
     }
 
-
+    /* login responsive */
+    .login-card button {
+        margin-left: 22px;
+    }
 
 
 }

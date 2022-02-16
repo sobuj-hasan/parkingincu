@@ -17,7 +17,7 @@
                     </li>
                     <li class="d-flex my-4">
                         <i class="fas fa-phone-volume"></i>
-                        <h5 class="mx-4">@lang('home.phone_value')</h5>
+                        <h5 class="mx-4">@lang('home.phone') : @lang('home.phone_value')</h5>
                     </li>
                     <li class="d-flex my-4">
                         <i class="far fa-envelope"></i>

@@ -26,6 +26,13 @@ home page css
     min-height: 172px;
 }
 
+/* login page  */
+.signin-card button {
+    margin-right: 40px;
+}
+.login-card button {
+    margin-right: 50px;
+}
 
 
 .menubar ul{
