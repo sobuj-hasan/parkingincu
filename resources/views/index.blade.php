@@ -261,7 +261,7 @@
                     <div class="card p-card">
                         <img src="assets/img/photos/valet_parking/wedding.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">@lang('home.valet_parking1')</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.valet_parking_homepage1')</h5>
                         </div>
                     </div>
                 </div>
@@ -269,7 +269,7 @@
                     <div class="card p-card">
                         <img src="assets/img/photos/valet_parking/restaurant.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">@lang('home.valet_parking2')</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.valet_parking_homepage2')</h5>
                         </div>
                     </div>
                 </div>
@@ -277,7 +277,7 @@
                     <div class="card p-card">
                         <img src="assets/img/photos/valet_parking/nightclubs.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">@lang('home.valet_parking3')</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.valet_parking_homepage3')</h5>
                         </div>
                     </div>
                 </div>
@@ -285,7 +285,7 @@
                     <div class="card p-card">
                         <img src="assets/img/photos/valet_parking/corporate-event.png" alt="card-img">
                         <div class="card-body">
-                            <h5 class="mt-2 mb-3">@lang('home.valet_parking4')</h5>
+                            <h5 class="mt-2 mb-3">@lang('home.valet_parking_homepage4')</h5>
                         </div>
                     </div>
                 </div>
