@@ -6,7 +6,7 @@
         <div class="overlay py-lg-5">
             <div class="container text-center">
                 <div class="banner-content mx-lg-5 px-lg-5">
-                    <h1 class="px-lg-5">@lang('home.find_the') <strong>@lang('home.parking')</strong> @lang('home.space_forget_the')<strong>@lang('home.mental_stress')</strong></h1>
+                    <h1 class="px-lg-5">@lang('home.find_the_parking_space')</h1>
                     <div class="search-bar my-5">
                         <form method="GET" action="{{ route('search.result') }}" novalidate="novalidate">
                             @csrf
@@ -111,7 +111,8 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <h2 class="section-header">@lang('home.we_are_ready_to') <span>@lang('home.parking')</span> @lang('home.space')</h2>
-                    <p class="paragraph mt-4">@lang('home.parking_space_article')</p>
+                    <p class="paragraph mt-4">@lang('home.parking_space_article')</p><br>
+                    <p class="paragraph mt-4">@lang('home.parking_space_article2')</p>
                 </div>
             </div>
         </div>

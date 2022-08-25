@@ -85,22 +85,27 @@
                             @endif
                         </ul>
                         <ul class="">
+
                             @if (Auth::guest())
                                 <li>
                                     <a href="{{ route('login') }}">@lang('home.signup')</a>
                                 </li>
                             @else
-                                <li>
-                                    @if (Auth::user()->role == 1)
+                                @if (Auth::user()->role == 1)
+                                    <li">
                                         <a href="{{ route('admin.index') }}">
                                             <img style="border: 1px solid #a6adce;" width="35px" height="35px" class="rounded-circle" src="{{ asset('assets/img/users/') }}/{{ Auth::user()->profile_photo }}" alt="user">
                                         </a>
-                                    @elseif(Auth::user()->role == 2)
+                                    </li>
+                                @endif
+
+                                @if (Auth::user()->role == 2)
+                                    <li>
                                         <a href="{{ route('dashboard.index') }}">
                                             <img style="border: 1px solid #a6adce;" width="35px" height="35px" class="rounded-circle" src="{{ asset('assets/img/users/') }}/{{ Auth::user()->profile_photo }}" alt="user">
                                         </a>
-                                    @endif
-                                </li>
+                                    </li>
+                                @endif
                             @endif
                         </ul>
                     </span>
@@ -259,15 +264,6 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                     <img src="{{ asset('assets/img/logo/footer-logo.png') }}" alt="footer-logo"><br>
                     <span>@lang('home.footer_paragraph')</span>
-                    {{-- <form method="GET" action="{{ route('subscribe') }}">
-                        <div class="input-group mt-3">
-                            <input type="text" class="custom-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2" value="{{ old('email') }}" name="email">
-                            <button type="submit" id="button-addon2"> Subscribe </button>
-                        </div>
-                        @error('email')
-                            <span class="text-warning fw-bolder">{{ $message }}</span>
-                        @enderror
-                    </form> --}}
                     <div class="social-link mt-3">
                         <ul class="d-flex">
                             <li class="mx-2">

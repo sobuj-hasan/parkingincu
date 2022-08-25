@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Idemonbd\Notify\Facades\Notify;
 use Illuminate\Support\Facades\Auth;
 use App\Providers\RouteServiceProvider;
 
@@ -18,11 +19,11 @@ class UserMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::check() && Auth::user()->role == 2) {
-            return redirect(RouteServiceProvider::HOME);
+        if (auth()->check() && auth()->user()->role == 2) {
+            return $next($request);
         } else {
-            return "login";
+            Notify::error("Please login to as a User", 'Error');
+            return redirect('/login');
         }
-        return $next($request);
     }
 }

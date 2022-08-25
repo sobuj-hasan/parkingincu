@@ -4,11 +4,6 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
 
-
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
-})->middleware(['auth'])->name('dashboard.index');
-
     // Fontend Controller Routes
     Route::get('/', [FrontendController::class, 'index'])->name('index');
     Route::get('subscribe', [FrontendController::class, 'subscribe'])->name('subscribe');
@@ -29,7 +24,7 @@ Route::get('/dashboard', function () {
 
     // Dashboard Routes
     Route::group(
-        ['namespace' => 'User', 'middleware' => 'auth'],
+        ['namespace' => 'User', 'middleware' => 'user'],
         function () {
             Route::get('dashboard', 'UserDashboardController@index')->name('dashboard.index');
             Route::get('user/logout', 'UserDashboardController@logout')->name('user.logout');
