@@ -7,13 +7,14 @@
     --wsc: #FF4BA1;
     --wc: #ffffff;
     --wfc: #FCFCFF;
-    --sc: #717fff;
+    --sc: #662d91;
     --gc: #A7A7A7;
     --abc: #3d4271;
     --lnc: #E5EAF5;
     --pgc: #8B8B8B;
     --irc: #1E425E;
     --fbg: #223343;
+    --overlay: #662d91b0;
 
     --gb: linear-gradient(102.92deg, #1B1285 -36.3%, #643088 100%);
 }

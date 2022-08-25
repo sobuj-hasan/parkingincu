@@ -252,7 +252,7 @@ header {
     background-position: center;
 }
 .overlay {
-    background-color: #717fffc9;
+    background-color: var(--overlay);
 }
 .banner-content{
     padding: 60px 0px;
@@ -587,7 +587,7 @@ footer .input-group button{
     color: var(--wc);
 }
 .banner-two .overlay {
-    background: #717fffa6;
+    background: #662d91b0;
 }
 .valet-services{
     background: var(--lnc);
