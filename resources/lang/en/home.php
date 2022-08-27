@@ -149,7 +149,7 @@ return [
     // Valet parking contect 
     // =================================
     "Valet_Parking" => "Valet Parking",
-    "valet_parking1" => "Providing hourly street parking services",
+    "Valet_Parking1" => "Providing hourly street parking services",
     "valet_parking2" => "Providing parking management and rehabilitation services",
     "valet_parking3" => "Providing valet parking services at airports",
     "valet_parking4" => "Providing valet parking at railway stations",
