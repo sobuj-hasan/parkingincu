@@ -12,7 +12,7 @@ return [
     "signup" => "تسجيل الدخول ",
     "become_neighbor_host" => "  كن مضيفًا مجاورًا",
     "callus" => "اتصل بنا : ",
-    "callus_value" => "02154879635+",
+    "callus_value" => "0551175959 ",
     "followus" => "تابعنا : ",
     "find_the_parking_space" => "مع منصة حاضنة المواقف
  اختر مكان لركن سياراتك ووفر الوقت والجهد",
@@ -203,4 +203,23 @@ return [
     "signin_using" => "تسجيل الدخول ",
     "retype_password" => "اعد ادخال كلمة المرور",
     "already_have_an_account" => "هل لديك حساب",
+    // ================================
+    // User Dashboard content Here
+    // ================================
+    "dashboard" => "لوحة القيادة",
+    "my_profile" => "ملفي",
+    "profile_update" => "تحديث الملف الشخصي",
+    "profile_settings" => "إعدادات الملف الشخصي",
+    "booked_space" => "مساحة محجوزة",
+    "transaction_history" => "تاريخ المعاملات",
+    "logout" => "تسجيل خروج",
+    "profile_edit" => "تحرير ملف التعريف",
+    "Your_Statistics" => "إحصائياتك",
+    "Account_Information" => "معلومات الحساب",
+    "SPACE_BOOKED" => "حجز الفضاء",
+    "JOIN_DATE" => "تاريخ الانضمام",
+    "USER_ACTIVITIES" => "أنشطة المستخدم",
+    "TOTAL_TRANSECTION" => "إجمالي النقل",
+
+
 ];

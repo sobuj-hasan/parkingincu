@@ -140,9 +140,6 @@
                             <li class="small-text my-3">
                                 @lang('home.service_one_listthree')
                             </li>
-                            <div class="view-btn my-3">
-                                <a class="" href="{{ route('service') }}">@lang('home.view_all')</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,9 +160,6 @@
                             <li class="small-text pb-3 my-3">
                                 @lang('home.service_two_listfour')
                             </li>
-                            <div class="view-btn my-3">
-                                <a class="" href="{{ route('service') }}">@lang('home.view_all')</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,9 +180,6 @@
                             <li class="small-text pb-3 my-3">
                                 @lang('home.service_three_listfour')
                             </li>
-                            <div class="view-btn my-3">
-                                <a class="" href="{{ route('service') }}">@lang('home.view_all')</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -209,9 +200,9 @@
                             <li class="small-text pb-3 my-3">
                                 @lang('home.service_four_listfour')
                             </li>
-                            <div class="view-btn my-3">
+                            {{-- <div class="view-btn my-3">
                                 <a class="" href="{{ route('service') }}">@lang('home.view_all')</a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

@@ -30,9 +30,9 @@
                             </div>
                             <p class="fw-bolder d-flex justify-content-center">@lang('home.signin_using')</p>
                             <ul class="d-flex justify-content-center mb-5">
-                                <li><a href="#"><i class="fab fa-google"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="https://www.google.com/"><i class="fab fa-google"></i></a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </form>

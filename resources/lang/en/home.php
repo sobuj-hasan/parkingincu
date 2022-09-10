@@ -12,7 +12,7 @@ return [
     "signup" => "Sign Up",
     "become_neighbor_host" => "Become Neighbor Host",
     "callus" => "Call Us : ",
-    "callus_value" => "+02154879635",
+    "callus_value" => "0551175959 ",
     "followus" => "Follow Us : ",
     "find_the_parking_space" => "With parking incubator platform Choose a place to park your car and save time and effort",
     "parking" => "Parking",
@@ -206,9 +206,24 @@ return [
     "signin_using" => "Sign In using",
     "retype_password" => "Re-type Password",
     "already_have_an_account" => "Already Have an Account !",
-
-
-
+    // ================================
+    // User Dashboard content Here
+    // ================================
+    "dashboard" => "Dashboard",
+    "my_profile" => "My Profile",
+    "profile_update" => "Profile Update",
+    "profile_settings" => "Profile Settings",
+    "booked_space" => "Booked Space",
+    "transaction_history" => "Transaction History",
+    "logout" => "Logout",
+    "profile_edit" => "Profile Edit",
+    "Your_Statistics" => "Your Statistics",
+    "Account_Information" => "Account Information",
+    "SPACE_BOOKED" => "SPACE BOOKED",
+    "JOIN_DATE" => "JOIN DATE",
+    "USER_ACTIVITIES" => "USER ACTIVITIES",
+    "TOTAL_TRANSECTION" => "TOTAL TRANSECTION",
+    "" => "",
 
 
 ];

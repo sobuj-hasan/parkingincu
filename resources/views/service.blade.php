@@ -35,9 +35,6 @@
                             <li class="small-text my-3">
                                 @lang('home.service_one_listthree')
                             </li>
-                            <div class="view-btn my-3">
-                                <a class="" href="">@lang('home.view_all')</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,9 +55,6 @@
                             <li class="small-text pb-3 my-3">
                                 @lang('home.service_two_listfour')
                             </li>
-                            <div class="view-btn my-3">
-                                <a class="" href="">@lang('home.view_all')</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,9 +75,6 @@
                             <li class="small-text pb-3 my-3">
                                 @lang('home.service_three_listfour')
                             </li>
-                            <div class="view-btn my-3">
-                                <a class="" href="">@lang('home.view_all')</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,9 +95,6 @@
                             <li class="small-text pb-3 my-3">
                                 @lang('home.service_four_listfour')
                             </li>
-                            <div class="view-btn my-3">
-                                <a class="" href="">@lang('home.view_all')</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,9 +112,6 @@
                             <li class="small-text my-3">
                                 @lang('home.service_five_listthree')
                             </li>
-                            <div class="view-btn my-3">
-                                <a class="" href="">@lang('home.view_all')</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -144,9 +129,6 @@
                             <li class="small-text my-3">
                                 @lang('home.service_six_listtthree')
                             </li>
-                            <div class="view-btn my-3">
-                                <a class="" href="">@lang('home.view_all')</a>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -50,3 +50,9 @@ home page css
 .footer-link h6::after {
     right: 0px;
 }
+
+
+/* Dashboard css here */
+.dashboard .user-dashboard .left-side .left-menu ul li {
+    padding-right: 8%;
+}
